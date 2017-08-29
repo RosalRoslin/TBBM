@@ -170,9 +170,9 @@ and (max-width: 1366px){
 </section> -->
 <section class="single-page-title">
     <div class="container text-center title-container">
-        <h1 style="color: white;position: relative;">Nothing pushes you more than running. <br><br><span style="font-size: 50px;">Just run.</span></h1>
+        <h1 style="color: white;position: relative; font-size: 40px;">Nothing pushes you more than running.<span style="font-size: 55px;display: block;margin-top: 40px;">Just run.</span></h1>
         <center> 
-                <div class="col-md-12  text-center" style="margin-top: 20px;">
+                <div class="col-md-12  text-center" style="top: 100px;">
                 <a href="join.php" class="btn btn-lg btn-primary memeber-btn" style="padding: 15px 60px;font-size: 15px;">Become a Member</a>
                 </div>
             </center>
