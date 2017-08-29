@@ -1,0 +1,13 @@
+[18-Aug-2017 17:17:30 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:21:27 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (2) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:21:29 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'localhost:3306' (0) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:22:52 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '11.62.0.20' (113) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:22:56 UTC] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on '11.62.0.20' (113) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:23:10 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:24:08 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:24:14 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:25:21 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:32:13 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:33:21 UTC] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'thebigbeachmarat'@'localhost' (using password: YES) in /home/gpkish28/public_html/thebigbeachmarathon.com/class/dbconnect.php on line 8
+[18-Aug-2017 17:34:42 UTC] PHP Notice:  Undefined index: email in /home/gpkish28/public_html/thebigbeachmarathon.com/class/login.php on line 12
+[18-Aug-2017 17:34:42 UTC] PHP Notice:  Undefined index: password in /home/gpkish28/public_html/thebigbeachmarathon.com/class/login.php on line 13

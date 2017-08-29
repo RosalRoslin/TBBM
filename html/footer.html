@@ -1,0 +1,134 @@
+
+<footer class="footer">
+
+    <!-- Footer Widget Section -->
+    <div class="footer-widget-section">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-4 footer-block">
+                    <div class="footer-widget widget_text">
+                        <!-- <div class="footer-logo">
+                            <a href="#"><img src="img/the-big-beach-marathon.png" alt=""></a>
+                        </div> -->
+                        <h3>The Big Beach Marathon</h3>
+                        <p>Any contest or event  of greater than normal length would require exceptional endurance. The Big Beach Marathon would be a testimony of your innate character which you wouldn't have realised till now. We challenge you to compete with your ownself. Are you game for it?</p>
+
+                    </div>
+                </div><!-- /.col-sm-4 -->
+
+                <div class="col-sm-4 footer-block">
+                    <div class="footer-widget widget_text">
+                        <h3>We thrive for your fitness</h3>
+                        <p>Fitness being the soul mantra for better life. We love creating avenues wherein you can utilize the opportunity
+                        to improve your fitness and to showcase the same. The beauty of fitness lies in realising the same, come run with us and stay fit.</p>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+
+                <div class="col-sm-4 footer-block last">
+                    <div class="footer-widget widget_text">
+                        <h3>Contact Us Today</h3>
+                        <address>
+                            Call Us 666 777 888 OR 111 222 333<br>
+                            Send an Email on <a href="mailto:#">contact@domain.com</a><br>
+                            EA Chambers Tower II, No.49/50L, Whites Road<br>
+                            Royapettah, Chennai, Tamil Nadu 600002, India <br>
+                        </address>
+
+                        <ul class="list-inline social-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.col-sm-4 -->
+            </div>
+        </div>
+    </div><!-- /.Footer Widget Section -->
+
+    <div class="copyright-section">
+        <div class="container clearfix">
+                <span class="copytext">Copyright &copy; 2017 | <a href="#">The Big Beach Marathon</a>
+
+            <ul class="list-inline pull-right">
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="privacy.php">Privacy Policy</a></li>
+                <!-- <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li> -->
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
+        </div><!-- .container -->
+    </div><!-- .copyright-section -->
+</footer>
+<!-- .footer -->
+</div>
+<!-- .content-wrapper -->
+</div>
+<!-- .offcanvas-pusher -->
+
+<div class="uc-mobile-menu uc-mobile-menu-effect">
+    <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
+            id="uc-mobile-menu-close-btn">&times;</button>
+    <div>
+        <div>
+            <ul id="menu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="benefits.php">Member Benefits</a></li>
+                <li><a href="chapters.php">Chapters/Groups</a></li>
+                <li><a href="sponsors.php">Sponsors</a></li>
+                <li><a href="events.php">Events</a></li>
+                <li><a href="join.php" class="dropdown-toggle">Join</a></li>
+                <li class=""><a href="my-profile.php">My Profile</a></li>
+                <li><a href="member.php">Become a Member</a></li>
+                <li><a href="merchandise.php">Merchandise</a></li>
+                <li><a href="offers.php">Brands & Offers</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- .uc-mobile-menu -->
+
+
+</div>
+<!-- #main-wrapper -->
+
+<!-- Script -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/mobile-menu.js"></script>
+<script src="js/flexSlider/jquery.flexslider-min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    toastr.options = {
+  "positionClass": "toast-bottom-center"
+    }
+    <?php if (isset($_SESSION['login_error'])) { ?>
+    toastr.error('Email Or Password Entered Is Incorrect!', 'Login Error',{timeOut: 5000});
+    <?php unset($_SESSION['login_error']); } ?>
+
+     <?php if (isset($_SESSION['sign_error'])) { ?>
+    toastr.error('Signup Error', 'Register Error',{timeOut: 5000});
+    <?php unset($_SESSION['sign_error']); } ?>
+
+  });
+  
+</script>
+
+
+
+<div/>
+        <a style="font-size:0; height:0; width:0; opacity:0; position:absolute" target="_blank" href="#">The Big Beach Marathon</a>        
+    </div>
+</body>
+</html>
