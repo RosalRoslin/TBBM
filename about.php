@@ -52,7 +52,7 @@ include("html/header.html")
             <div class="col-md-12">
                 <p>The Big Beach Marathon is marathon event conducted in major cities across India and globally. The aim of this marathon is to recognise and appreciate our runners and spread awareness on fitness and its good effects on health. We have our Big Beach Runner charters in various cities wherein the groups discuss and decide about daily runs training schedules.
 
-We also organise fitness workshops in all the major cities which provides our members/running enthusiasts a avenue to stay fit. We have tie ups with top brands who would provide exclusive offers to our members on their products. In light of our vision, we would be launching fitness training and tracking application for both iOs and Andriod shortly. This application would be useful for both professional runners and to the newbie`s who wish to train and improve their fitness.</p>
+We also organise fitness workshops in all the major cities which provides our members/running enthusiasts a avenue to stay fit. We have tie ups with top brands who would provide exclusive offers to our members on their products. In light of our vision, we would be launching fitness training and tracking application for both iOs and Android shortly. This application would be useful for both professional runners and to the newbie`s who wish to train and improve their fitness.</p>
             </div>
             <!-- <div class="col-md-6">
                 <p>Completely pontificate timely metrics rather than accurate growth strategies. Seamlessly impact
@@ -70,7 +70,7 @@ We also organise fitness workshops in all the major cities which provides our me
 <section class="service-icon-style ptb-100">
     <section class="section-title">
         <div class="container text-center">
-            <h2>Features!</h2>
+            <h2>Quick Insights</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
