@@ -35,6 +35,10 @@ include("html/header.html")
     padding: 25% 0 5%;
     }
 }
+.ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 
 </style>
 <section class="single-page-title">

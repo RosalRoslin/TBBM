@@ -49,6 +49,31 @@ include("html/header.html")
     padding: 25% 0 5%;
     }
 }
+.ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.chapters-row{
+    margin-left: 100px;
+}
+@media only screen and (min-width: 1280px)
+and (max-width: 1366px){
+    .chapters-row{
+    margin-left: 50px;
+}
+}
+.x-services .thumbnail {
+    width: 80%;
+}
+@media (max-width: 600px){
+    .x-services .thumbnail {
+    width: 100%;
+    }
+        .chapters-row{
+    margin-left: -15px;
+    }
+    }
 </style>
 <section class="single-page-title">
     <div class="container text-center">
@@ -118,10 +143,10 @@ include("html/header.html")
     </section>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row chapters-row">
             <div class="col-md-4">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/banner/banner_mob_mar.png" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/chapters.jpg" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Chennai</a></h3>
@@ -133,7 +158,7 @@ include("html/header.html")
             </div>
             <div class="col-md-4">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/banner/banner_mob_mar.png" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/chapters.jpg" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Bangalore</a></h3>
@@ -146,7 +171,7 @@ include("html/header.html")
 
              <div class="col-md-4">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/banner/banner_mob_mar.png" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/chapters.jpg" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Pune</a></h3>

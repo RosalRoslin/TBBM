@@ -102,13 +102,13 @@ and (max-width: 1366px){
 
 }
 .single-page-title {
-    background: url(img/About-Marathon-home.jpg) no-repeat bottom;
+    background: url(img/home-banner.jpg) no-repeat bottom;
         background-attachment: scroll;
         background-size: auto auto;
     background-size: cover;
     width: 100%;
     background-attachment: scroll;
-    padding: 15% 0 5%;
+    padding: 15% 0 43%;
     position: relative;
 }
 .single-page-title::before {
@@ -118,8 +118,16 @@ and (max-width: 1366px){
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.19);
+    background: rgba(0, 0, 0, 0.5);
     }
+.title-container{
+    top: 75px;
+    position: relative;
+}
+.memeber-btn{
+    padding: 15px 60px;
+    font-size: 18px;
+}
 
 .x-features .promo-content {
     color: white;
@@ -161,11 +169,11 @@ and (max-width: 1366px){
 </div>
 </section> -->
 <section class="single-page-title">
-    <div class="container text-center">
-        <h1 style="color: white;">Nothing pushes you more than running. <br><br><span style="font-size: 50px;">Just run.</span></h1>
+    <div class="container text-center title-container">
+        <h1 style="color: white;position: relative;">Nothing pushes you more than running. <br><br><span style="font-size: 50px;">Just run.</span></h1>
         <center> 
                 <div class="col-md-12  text-center" style="margin-top: 20px;">
-                <a href="join.php" class="btn btn-lg btn-primary" style="padding: 15px 60px;font-size: 15px;">Become a Member</a>
+                <a href="join.php" class="btn btn-lg btn-primary memeber-btn" style="padding: 15px 60px;font-size: 15px;">Become a Member</a>
                 </div>
             </center>
     </div>
@@ -235,7 +243,7 @@ and (max-width: 1366px){
         <div class="row">
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="img/img-offer-1.jpg" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/Gifts.jpg" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Gifts & Apparels</a></h3>
@@ -302,7 +310,7 @@ and (max-width: 1366px){
                 <img class="img-responsive" src="img/about-snippet.jpg" alt="">
             </div>
             <div class="col-md-6">
-                <div class="promo-block-wrapper clearfix">
+                <div class="promo-block-wrapper clearfix" style="margin-top: 70px;">
                     <div class="promo-icon">
                        <!--  <i class="fa fa-question"></i> -->
 

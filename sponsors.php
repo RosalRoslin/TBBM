@@ -53,6 +53,18 @@ include("html/header.html")
     .single-page-title {
     padding: 25% 0 5%;
     }
+    .service-icon-style .promo-icon {
+    margin: 0 60px;
+}
+}
+
+.ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.service-icon-style .promo-content {
+    padding: 20px;
+    margin-top: 35px;
 }
 </style>
 
@@ -143,7 +155,7 @@ include("html/header.html")
             </div>
                     </div>
                     <div class="promo-content">
-                        <h3 class="head">What We Do</h3>
+                       <!--  <h3 class="head">What We Do</h3> -->
 
                         <p>The Big Beach Marathon is a annual marathon event conducted in Chennai, Bengaluru, Pune, Goa, Pondicherry and Mumbai. The aim of this marathon is to recognise and appreciate our runners and spread awareness on fitness and its good effects on health.</p>
                     </div>
@@ -157,8 +169,8 @@ include("html/header.html")
                 <a href="#"><img src="img/o2-healthstudio.png" alt="Image"></a>
             </div>
                     </div>
-                    <div class="promo-content" style="margin-top: 30px;">
-                        <h3 class="head">Our Chapters</h3>
+                    <div class="promo-content" style="margin-top: 35px;">
+                        <!-- <h3 class="head">Our Chapters</h3> -->
 
                         <p>We have our Big Beach Runner charters in Chennai, Bengaluru, Pune, Goa, Pondicherry and Mumbai wherein the groups discuss and decide about daily runs training schedules.</p>
                     </div>
