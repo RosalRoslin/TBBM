@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("html/header.html")
 ?>
 
@@ -143,7 +144,15 @@ input[type="date"]::-webkit-inner-spin-button{
             </div>
             <div class="form-group">
                 <label>Email</label>
-                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4" required="true">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4" required="true" readonly="true" style="cursor: not-allowed;">
+            </div>
+             <div class="form-group">
+                <label>Chapters</label>
+                   <select class="form-control" id="sel1" required="true">
+                                <option>Big Beach runners - Bangalore</option>
+                                <option>Big Beach runners - Chennai</option>
+                                <option>Big Beach runners - Pune</option>
+                            </select
             </div>
             <div class="row">
                  <div class="col-xs-12 col-sm-6 col-md-6">
