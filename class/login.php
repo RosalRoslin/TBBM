@@ -23,6 +23,7 @@ if (isset($_POST)) {
  
  if (password_verify($password, $row['password']) && $count==1) {
 	  $_SESSION['userSession'] = $row['firstname'];
+	  $_SESSION['email'] = $row['email'];
 	  unset($_SESSION['login_error']);
 	  header("Location: ../profile.php");
  } else {

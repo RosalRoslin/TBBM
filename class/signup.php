@@ -48,7 +48,7 @@ if(isset($_POST)) {
 
  	if ($count==0) {
 
-		$query = "INSERT INTO users(firstname, lastname,email,password) VALUES('$firstname','$lastname','$email','$hashed_password')";
+		$query = "INSERT INTO users(firstname, lastname,email,password,'role') VALUES('$firstname','$lastname','$email','$hashed_password','User')";
 
 		if ($DBcon->query($query)) { 
 
