@@ -1,8 +1,9 @@
 <?php
 // session_start();
 include("class/auth.php");
+$user = include("class/getuser.php");
 include("html/header.html");
-
+print_r($user);
 //include_once 'class/auth.php';
 ?>
     <style type="text/css">
@@ -147,25 +148,27 @@ include("html/header.html");
     <div class="tab-content">
     <div class="tab-pane fade in active" id="home">
     <div class="col-md-12">
-        <form role="form">
+        <form role="form" action="class/profile.php" method="POST">
             <h2>Edit your profile</h2>
             <hr class="">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
-                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                        <input type="text" name="firstname" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1"  value ="<?php echo $user['FirstName']; ?>">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
-                        <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                        <input type="text" name="lastname" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2" value ="<?php echo $user['LastName']; ?>">
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="3" value ="<?php echo $user['email']; ?>" readonly= "true">
+				
+				<input type="hidden" name="role_update" id="email" class="form-control input-lg" value ="User" readonly= "true">
             </div>
-            <div class="row">
+            <!-- <div class="row">
                  <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <label for="sel1">Sex</label>
@@ -175,7 +178,7 @@ include("html/header.html");
                             </select>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="form-group">
@@ -190,8 +193,9 @@ include("html/header.html");
             </div> -->
             <hr class="">
             <div class="row">
-                <div class="col-xs-12 col-md-6 "><a href="#" class="btn btn-success btn-block btn-lg">Save</a></div>
-                <div class="col-xs-12 col-md-6 "><a href="#" class="btn btn-lg btn-primary btn-block">Become a Member</a></div>
+                <div class="col-xs-12 col-md-6 ">
+					<input type="submit" value="Save" class="btn btn-success btn-block btn-lg"></div>
+                <div class="col-xs-12 col-md-6 "><a href="member.php" class="btn btn-lg btn-primary btn-block">Become a Member</a></div>
             </div>
         </form>
     </div>
