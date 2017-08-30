@@ -42,7 +42,7 @@ include("html/header.html")
 <section class="about-text ptb-100">
     <section class="section-title">
         <div class="container text-center">
-            <h2>A Few Words About Us</h2>
+            <h2>A Few Words</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
@@ -306,7 +306,7 @@ We also organise fitness workshops in all the major cities which provides our me
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond.png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -314,7 +314,7 @@ We also organise fitness workshops in all the major cities which provides our me
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">

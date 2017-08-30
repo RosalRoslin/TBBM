@@ -102,7 +102,7 @@ and (max-width: 1366px){
 
 }
 .single-page-title {
-    background: url(img/home-banner.jpg) no-repeat bottom;
+    background: url(img/homepage-banner.jpg) no-repeat bottom;
         background-attachment: scroll;
         background-size: auto auto;
     background-size: cover;
@@ -124,9 +124,9 @@ and (max-width: 1366px){
     top: 75px;
     position: relative;
 }
-.memeber-btn{
+.member-btn{
     padding: 15px 60px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .x-features .promo-content {
@@ -144,6 +144,35 @@ and (max-width: 1366px){
 .o2{
     margin-left: 30px;
 }
+#first-title{
+    color: white;
+    position: relative; 
+    font-size: 40px;
+}
+#second-title{
+    font-size: 55px;
+    display: block;
+    margin-top: 40px;
+}
+.btn-mem{
+    top: 100px;
+}
+@media (max-width: 600px){
+    #first-title{
+    font-size: 25px;
+}
+#second-title {
+    font-size: 40px;
+}
+.btn-mem {
+    top: 20px;
+}
+.member-btn {
+    padding: 15px 60px;
+    font-size: 13px;
+}
+}
+
 </style>
 <!-- <section id="welcome" class="hero " style="background-position: 0px 0px;">
 <video class="tbbm-bg-video" autoplay="autoplay" loop="loop" muted="muted" preload="auto" style="width:100%; height: 720px; left: 0px; top: -137.5px; display: block;object-fit:cover;"><source src="video/Sequence 01.mp4" type="video/mp4"></video> -->
@@ -170,10 +199,10 @@ and (max-width: 1366px){
 </section> -->
 <section class="single-page-title">
     <div class="container text-center title-container">
-        <h1 style="color: white;position: relative; font-size: 40px;">Nothing pushes you more than running.<span style="font-size: 55px;display: block;margin-top: 40px;">Just run.</span></h1>
+        <h1 id="first-title">Nothing pushes you more than running.<span id="second-title">Just run.</span></h1>
         <center> 
-                <div class="col-md-12  text-center" style="top: 100px;">
-                <a href="join.php" class="btn btn-lg btn-primary memeber-btn" style="padding: 15px 60px;font-size: 15px;">Become a Member</a>
+                <div class="col-md-12 text-center btn-mem">
+                <a href="join.php" class="btn btn-lg btn-primary member-btn">Become a Member</a>
                 </div>
             </center>
     </div>
@@ -254,7 +283,7 @@ and (max-width: 1366px){
             </div>
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="img/img-offer-2.jpg" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/Discounts.png" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Offers & Discounts</a></h3>
@@ -533,7 +562,7 @@ and (max-width: 1366px){
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond.png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -541,7 +570,7 @@ and (max-width: 1366px){
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">

@@ -263,7 +263,7 @@ and (max-width: 1366px){
                     <!-- /.progress-item -->
 
                     <div class="progress-item">
-                        <span class="progress-title">Mumbai</span>
+                        <span class="progress-title">Pune</span>
 
                         <div class="progress">
                             <div class="progress-bar progress-bar-dealy" role="progressbar" aria-valuenow="75"
@@ -530,7 +530,7 @@ and (max-width: 1366px){
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond.png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -538,7 +538,7 @@ and (max-width: 1366px){
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">

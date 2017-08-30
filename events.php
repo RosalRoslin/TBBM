@@ -405,47 +405,47 @@ th.tabco4 {
               <div class="row">
                   <div class="col-xs-6">
                       <div class="well">
-                          <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                          <form id="loginForm" method="POST" action="/login/">
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="username" name="username" value="" required="true" title="" placeholder="Please enter you Firstname">
+                                  <input type="text" class="form-control" id="firstname" name="firstname" value="" required="true" title="firstname" placeholder="Please enter you Firstname">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="password" name="password" value="" required="true" title="Please enter your password" placeholder="Please enter you Lastname">
+                                  <input type="text" class="form-control" id="lastname" name="lastname" value="" required="true" title="Please enter your lastname" placeholder="Please enter you Lastname">
                                   <span class="help-block"></span>
                               </div>
                                <div class="form-group">
-                                  <input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your password" placeholder="Please enter you Email address">
+                                  <input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your email" placeholder="Please enter you Email address">
                                   <span class="help-block"></span>
                               </div>
                                <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="Flat No. / House No.">
+                                  <input type="text" class="form-control" id="Flatno" name="Flatno" value="" required="true" title="Please enter your Flat No. / House No." placeholder="Enter your Flat No. / House No.">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="Building Name">
+                                  <input type="text" class="form-control" id="building" name="building" value="" required="true" title="Please enter your building name" placeholder="Enter your Building Name">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="Street Name">
+                                  <input type="text" class="form-control" id="street" name="street" value="" required="true" title="Please enter your street name" placeholder="Enter Street Name">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="Area">
+                                  <input type="text" class="form-control" id="areaname" name="areaname" value="" required="true" title="Please enter Area Name" placeholder="Enter Area Name">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="City">
+                                  <input type="text" class="form-control" id="city" name="city" value="" required="true" title="Please enter City" placeholder="Enter City">
                                   <span class="help-block"></span>
                               </div>
 
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="State">
+                                  <input type="text" class="form-control" id="state" name="state" value="" required="true" title="Please enter your state" placeholder="Enter State">
                                   <span class="help-block"></span>
                               </div>
 
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="Pin code">
+                                  <input type="text" class="form-control" id="pincode" name="pincode" value="" required="true" title="Please enter Pincode" placeholder="Enter Pincode">
                                   <span class="help-block"></span>
                               </div>
                               <div class="form-group">
@@ -462,12 +462,12 @@ th.tabco4 {
                               </div>
 
                               <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your password" placeholder="Mobile number">
+                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">
                                   <span class="help-block"></span>
                               </div>
 
-                              <button type="submit" class="btn btn-success btn-block">Login</button>
-                              <a href="#" class="btn btn-default btn-block">Help to login</a>
+                              <button type="submit" class="btn btn-success btn-block">Proceed to Pay</button>
+                             <!--  <a href="#" class="btn btn-default btn-block">Help to login</a> -->
                           </form>
                       </div>
                   </div>
@@ -658,7 +658,7 @@ th.tabco4 {
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond.png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -666,7 +666,7 @@ th.tabco4 {
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -679,7 +679,7 @@ th.tabco4 {
     </div>
     <!--end of .container -->
 </section>
-<!-- /.client-logo -->
+<!-- /.client-logo --> 
 
 <?php
 include("html/footer.html")

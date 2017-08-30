@@ -1511,7 +1511,7 @@ service-icon-style
 .footer .copyright-section .copytext {
     /*text-transform : uppercase;*/
     color          : #6b6b6b;
-    font-weight    : 600;
+    font-weight    : 400;
     }
 
 @media (min-width : 768px) {

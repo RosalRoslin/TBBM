@@ -63,8 +63,9 @@ include("html/header.html")
     padding-bottom: 70px;
 }
 .service-icon-style .promo-content {
-    padding: 20px;
+    padding: 40px;
     margin-top: 35px;
+    text-align: justify;
 }
 </style>
 
@@ -151,13 +152,13 @@ include("html/header.html")
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-icon">
                        <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/raymond.png" alt="Image"></a>
+                <a href="#"><img src="img/raymond(150x150).png" alt="Image"></a>
             </div>
                     </div>
                     <div class="promo-content">
                        <!--  <h3 class="head">What We Do</h3> -->
 
-                        <p>The Big Beach Marathon is a annual marathon event conducted in Chennai, Bengaluru, Pune, Goa, Pondicherry and Mumbai. The aim of this marathon is to recognise and appreciate our runners and spread awareness on fitness and its good effects on health.</p>
+                        <p>Raymond Group is an Indian branded fabric and fashion retailer, incorporated in 1925. It produces suiting fabric, with a capacity of producing 31 million meters of wool and wool-blended fabrics.The group owns apparel brands like Raymond, Raymond Premium Apparel, Park Avenue, Park Avenue Woman[4] ColorPlus[5] & Parx. All the brands are retailed through 'The Raymond Shop' (TRS), with a network of over 700 retail shops spread across India and overseas, in over 200 cities.</p>
                     </div>
                 </div>
                 <!-- /.promo-block-wrapper -->
@@ -166,13 +167,13 @@ include("html/header.html")
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-icon">
                          <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                <a href="#"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
             </div>
                     </div>
                     <div class="promo-content" style="margin-top: 35px;">
                         <!-- <h3 class="head">Our Chapters</h3> -->
 
-                        <p>We have our Big Beach Runner charters in Chennai, Bengaluru, Pune, Goa, Pondicherry and Mumbai wherein the groups discuss and decide about daily runs training schedules.</p>
+                        <p>O2 Health Studio pioneers in Health & Fitness in Chennai. They have helped thousands of people in Chennai discover fitness. They teach them how to enjoy their workouts, while getting healthy and fit with their diversified exercise programs. You name it & they've got it! Their ace of course is; state of art gymnasium and varied Group exercise classes conducted by trained & experienced instructors who will guide you every step of the way.</p>
                     </div>
                 </div>
                 <!-- /.promo-block-wrapper -->
@@ -245,12 +246,12 @@ printed materials.</p>
     <div class="container">
         <div class="row">
             <div class="col-md-5 img-left">
-                <img class="img-responsive" src="img/about-snippet.jpg" alt="">
+                <img class="img-responsive" src="img/sponsor-img.png" alt="">
             </div>
             <div class="col-md-6">
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-icon">
-                        <i class="fa fa-question"></i>
+                        <i class="fa fa-question-circle "></i>
 
                     </div>
                     <div class="promo-content">
@@ -262,8 +263,8 @@ printed materials.</p>
                 <!-- /.promo-block-wrapper -->
 
                 <div class="promo-block-wrapper clearfix">
-                    <div class="promo-icon">
-                        <i class="fa fa-users"></i>
+                    <div class="promo-icon" style="margin-right: 15px;">
+                        <i class="fa fa-line-chart"></i>
                     </div>
                     <div class="promo-content">
                         <h3>Demographics</h3>
@@ -275,7 +276,7 @@ printed materials.</p>
 
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-icon">
-                        <i class="fa fa-mobile"></i>
+                        <i class="fa fa-life-ring"></i>
                     </div>
                     <div class="promo-content last-type">
                         <h3>Your Support Gives</h3>

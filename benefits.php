@@ -112,7 +112,7 @@ include("html/header.html")
         <div class="row">
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="img/img-offer-1.jpg" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/Gifts.jpg" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Gifts & Apparels</a></h3>
@@ -123,7 +123,7 @@ include("html/header.html")
             </div>
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="img/img-offer-2.jpg" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="img/Discounts.png" alt="Image"></a>
 
                     <div class="caption">
                         <h3><a href="#">Offers & Discounts</a></h3>
@@ -393,7 +393,7 @@ include("html/header.html")
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond.png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -401,7 +401,7 @@ include("html/header.html")
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
