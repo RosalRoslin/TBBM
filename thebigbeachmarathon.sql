@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 18, 2017 at 07:13 PM
+-- Generation Time: Aug 30, 2017 at 05:19 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -38,6 +38,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `Height` varchar(255) DEFAULT NULL,
   `Weight` varchar(255) DEFAULT NULL,
   `Membership` varchar(255) DEFAULT NULL,
+  `role` varchar(255) DEFAULT NULL,
+  `groups` varchar(255) DEFAULT NULL,
   `userid` varchar(255) DEFAULT NULL,
   `profiile` varchar(255) DEFAULT NULL,
   `created` datetime DEFAULT CURRENT_TIMESTAMP,
@@ -48,8 +50,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `FirstName`, `LastName`, `email`, `password`, `DOB`, `Gender`, `ContactNumber`, `Height`, `Weight`, `Membership`, `userid`, `profiile`, `created`) VALUES
-(6, 'Pradeep', 'Jeyachandran', 'pradeep@orbiten.in', '$2y$10$OXYSrDBQSVifvolPRQ4kqORs86vF23mJKO1b9yDA.1fGr3yz84LG6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-08-18 21:03:55');
+INSERT INTO `users` (`ID`, `FirstName`, `LastName`, `email`, `password`, `DOB`, `Gender`, `ContactNumber`, `Height`, `Weight`, `Membership`, `role`, `groups`, `userid`, `profiile`, `created`) VALUES
+(6, 'Pradeep', 'J', 'pradeep@orbiten.in', '$2y$10$OXYSrDBQSVifvolPRQ4kqORs86vF23mJKO1b9yDA.1fGr3yz84LG6', NULL, NULL, NULL, NULL, NULL, NULL, 'User', NULL, NULL, NULL, '2017-08-18 21:03:55');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
