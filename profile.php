@@ -3,7 +3,6 @@
 include("class/auth.php");
 $user = include("class/getuser.php");
 include("html/header.html");
-print_r($user);
 //include_once 'class/auth.php';
 ?>
     <style type="text/css">
@@ -202,8 +201,6 @@ print_r($user);
 </div>
 <div class="tab-pane fade imagevalid" id="profile">
 <div class="col-md-12">
-
-
         <div class="row">
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
