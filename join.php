@@ -30,13 +30,19 @@ background-color: #e2e2e2 !important;
 border-color: #313131 !important;
 color: #313131 !important;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none !important; 
+  margin: 0 !important; 
+}
 </style>
 
 <section class="x-services ptb-100 gray-bg">
 <section class="section-title">
         <div class="container text-center">
             <!-- <h2>Login/Signup</h2>
-            <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span> -->
+            <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span> 
+            <h3>join - Sign up/login to avail exciting offers<br> on your running merchandise</h3>-->
         </div>
     </section>
 <section class="contact-form ptb-100" style="padding-top: 25px;">

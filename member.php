@@ -47,10 +47,14 @@ input[type="date"]::-webkit-inner-spin-button{
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
+	display: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    margin: 0 !important; 
+}
+input[type='number'] {
+    -moz-appearance:textfield;
 }
 </style>
 
@@ -250,13 +254,13 @@ function validate() {
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="form-group">
 					 <label>Height(in CM)</label>
-						<input type="text" name="Height" id="Height" class="form-control input-lg" placeholder="Enter Your Height" tabindex="6">
+						<input type="number" name="Height" id="Height" class="form-control input-lg" placeholder="Enter Your Height" tabindex="6">
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="form-group">
 					 <label>Weight(in KG)</label>
-						<input type="text" name="Weight" id="Weight" class="form-control input-lg" placeholder="Enter Your Weight" tabindex="7">
+						<input type="number" name="Weight" id="Weight" class="form-control input-lg" placeholder="Enter Your Weight" tabindex="7">
 					</div>
 				</div>
 			</div>

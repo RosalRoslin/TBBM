@@ -140,7 +140,7 @@ include("html/header.html")
     <section class="service-icon-style ptb-100">
     <section class="section-title">
         <div class="container text-center">
-            <h2>Features!</h2>
+            <h2>Our Sponsors!</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
@@ -239,7 +239,7 @@ printed materials.</p>
 <section class="x-features">
     <section class="section-title">
         <div class="container text-center">
-            <h2>About Us</h2>
+            <h2>To Become A Sponsor</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
