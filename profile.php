@@ -162,8 +162,8 @@ include("html/header.html");
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="3" value ="<?php echo $user['email']; ?>" readonly= "true">
+            <div class="form-group" >
+                <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="3" value ="<?php echo $user['email']; ?>" readonly= "true" style="cursor: not-allowed;">
 				
 				<input type="hidden" name="role_update" id="email" class="form-control input-lg" value ="User" readonly= "true">
             </div>

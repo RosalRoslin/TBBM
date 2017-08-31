@@ -45,6 +45,13 @@ input[type="date"]::-webkit-inner-spin-button{
 .step-controls{
 	display: none;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
 </style>
 
 <script type="text/javascript">
@@ -128,13 +135,13 @@ function validate() {
 <div class="container">
 <br>
 <br>
-	<div class="row" id="main">
+	<div id="main">
 		<form name="member" method="post" enctype="multipart/form-data" action="class/member.php" onSubmit="return validate();">
 		<div class="col-md-4 well" id="leftPanel">
 			<div class="row">
 				<div class="col-md-12">
 					<div>
-						<img src="http://lorempixel.com/200/200/abstract/1/" alt="Texto Alternativo" class="img-circle img-thumbnail">
+						<img src="img/profile.png" alt="Texto Alternativo" class="img-circle img-thumbnail">
 						<input type="file" name="profile" id="profile" accept="image/*" class="demoInputBox" required>
 						<span id="file_error"></span></div>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -229,7 +236,7 @@ function validate() {
 				<div class="col-xs-12 col-sm-6 col-md-6">
 					<div class="form-group">
 					 <label>Contact Number</label>
-						<input type="text" name="contact_number" id="contact_number" class="form-control input-lg" placeholder="Enter Your Contact Number" tabindex="4" required>
+						<input type="number" name="contact_number" id="contact_number" class="form-control input-lg" placeholder="Enter Your Contact Number" tabindex="4" required>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6">
@@ -311,6 +318,11 @@ $( function() {
 			});
 	  } );
 </script> -->
+<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+<script>
+    webshims.setOptions('forms-ext', {types: 'date'});
+webshims.polyfill('forms forms-ext');
+</script>
 
 <?php
 include("html/footer.html")

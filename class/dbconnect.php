@@ -1,8 +1,8 @@
 <?php
 
 	 $DBhost = "127.0.0.1";
-	 $DBuser = "thebigbeachmarat";
-	 $DBpass = "root@12";
+	 $DBuser = "root";
+	 $DBpass = "";
 	 $DBname = "thebigbeachmarathon";
 	 
 	 $DBcon = new MySQLi($DBhost,$DBuser,$DBpass,$DBname);

@@ -151,7 +151,8 @@ and (max-width: 1366px){
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Chennai</a></h3>
 
-                        <p>A complimentary gift of Big Beach Marathon merchandise.</p>
+                        <p>CHENNAI CHAPTER
+Chennai chapter includes groups of runners from different areas in Chennai. Stay fit and keep running is our mantra. We gather across various areas in Chennai and run during the course of the week.</p>
                        <!--  <button class="btn btn-primary pull-right">View More</button> -->
                     </div>
                 </div>
@@ -163,7 +164,7 @@ and (max-width: 1366px){
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Bangalore</a></h3>
 
-                        <p>A 15% discount on the race registration fee for all Big Beach Marathons across India.</p>
+                        <p>Bangalore the garden city has some amazing group of runners. This is our budding group which has started taking shape slowly. Watch this space for more running routines.</p>
                         <!-- <button class="btn btn-primary pull-right">View More</button> -->
                     </div>
                 </div>
@@ -176,7 +177,7 @@ and (max-width: 1366px){
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Pune</a></h3>
 
-                        <p>A 15% discount on the race registration fee for all Big Beach Marathons across India.</p>
+                        <p>Bangalore the budding It city has some amazing group of runners. This is our budding group which has started taking shape slowly. Watch this space for more running routines.</p>
                         <!-- <button class="btn btn-primary pull-right">View More</button> -->
                     </div>
                 </div>
