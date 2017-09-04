@@ -78,7 +78,7 @@ We also organise fitness workshops in all the major cities which provides our me
 
     <div class="container text-center">
         <div class="row">
-            <div class="col-sm-6 col-md-4">
+             <div class="col-sm-6 col-md-4">
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-icon">
                         <i class="fa fa-question"></i>

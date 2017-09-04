@@ -148,11 +148,10 @@ and (max-width: 1366px){
                 <div class="thumbnail clearfix">
                     <a href="#"><img class="img-responsive" src="img/chapters.jpg" alt="Image"></a>
 
-                    <div class="caption">
+                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Chennai</a></h3>
 
-                        <p>CHENNAI CHAPTER
-Chennai chapter includes groups of runners from different areas in Chennai. Stay fit and keep running is our mantra. We gather across various areas in Chennai and run during the course of the week.</p>
+                        <p>Chennai chapter includes groups of runners from different areas in Chennai. Stay fit and keep running is our mantra. We gather across various areas in Chennai and run during the course of the week.</p>
                        <!--  <button class="btn btn-primary pull-right">View More</button> -->
                     </div>
                 </div>
@@ -177,7 +176,7 @@ Chennai chapter includes groups of runners from different areas in Chennai. Stay
                     <div class="caption">
                         <h3><a href="#">Big Beach runners - Pune</a></h3>
 
-                        <p>Bangalore the budding It city has some amazing group of runners. This is our budding group which has started taking shape slowly. Watch this space for more running routines.</p>
+                        <p>Pune the budding IT city has some amazing group of runners. This is our budding group which has started taking shape slowly. Watch this space for more running routines.</p>
                         <!-- <button class="btn btn-primary pull-right">View More</button> -->
                     </div>
                 </div>
@@ -216,7 +215,7 @@ Chennai chapter includes groups of runners from different areas in Chennai. Stay
 </section>
 <!-- .x-services -->
 
-<section class="skills ptb-100 gray-bg">
+<!-- <section class="skills ptb-100 gray-bg">
     <section class="section-title">
         <div class="container text-center">
             <h2>Our Professional Skills</h2>
@@ -249,10 +248,10 @@ Chennai chapter includes groups of runners from different areas in Chennai. Stay
                                  aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
                         </div>
                         <span class="progress-percent">50%</span>
-                    </div> 
+                    </div> --> 
                     <!-- /.progress-item -->
 
-                    <div class="progress-item">
+                    <!-- <div class="progress-item">
                         <span class="progress-title">Bangalore</span>
 
                         <div class="progress">
@@ -260,10 +259,10 @@ Chennai chapter includes groups of runners from different areas in Chennai. Stay
                                  aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                         </div>
                         <span class="progress-percent">90%</span>
-                    </div> 
+                    </div>  -->
                     <!-- /.progress-item -->
 
-                    <div class="progress-item">
+                    <!-- <div class="progress-item">
                         <span class="progress-title">Pune</span>
 
                         <div class="progress">
@@ -271,7 +270,7 @@ Chennai chapter includes groups of runners from different areas in Chennai. Stay
                                  aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
                         </div>
                         <span class="progress-percent">75%</span>
-                    </div> 
+                    </div> --> 
                     <!-- /.progress-item -->
 
                     <!-- <div class="progress-item">
@@ -295,13 +294,13 @@ Chennai chapter includes groups of runners from different areas in Chennai. Stay
                         <span class="progress-percent">82%</span>
                     </div>  -->
                     <!-- /.progress-item -->
-                </div>
+                <!-- </div> -->
                 <!-- /.progress-wrapper -->
-            </div>
+        <!--     </div>
         </div>
     </div>
 
-</section>
+</section> -->
 <!-- .skills -->
 
 <!-- <section class="x-features">

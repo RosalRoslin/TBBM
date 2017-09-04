@@ -152,6 +152,9 @@ th.tabco4 {
     padding: 25% 0 5%;
     }
 }
+input[type='number'] {
+    -moz-appearance:textfield;
+}
 </style>
 <!-- <video class="tatsu-bg-video" autoplay="autoplay" loop="loop" muted="muted" preload="auto" style="width:100%; height: 720px; left: 0px; top: -137.5px; display: block;object-fit:cover;"><source src="video/Marathon.mp4" type="video/mp4"></video> -->
 <!-- <div id="x-corp-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
@@ -205,6 +208,11 @@ th.tabco4 {
     </a>
 </div> -->
 <!-- #x-corp-carousel-->
+<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js"></script>
+<script>
+webshims.setOptions('forms-ext', {types: 'date'});
+webshims.polyfill('forms forms-ext');
+</script>
 
 <section class="single-page-title">
     <div class="container text-center">
@@ -378,8 +386,8 @@ th.tabco4 {
 </tr>
 <tr>
 <td class="tabco1"></td>
-<td class="tabco2" ><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Register Now</button></td>
-<td class="tabco3" ><button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Register Now</button></td>
+<td class="tabco2" ><button class="btn btn-primary" data-toggle="modal" data-target="#half-mar-modal">Register Now</button></td>
+<td class="tabco3" ><button class="btn btn-primary" data-toggle="modal" data-target="#tenk-mar-modal">Register Now</button></td>
 </tr>
 </tbody>
 </table>
@@ -394,101 +402,7 @@ th.tabco4 {
 </section>
 
 
-<div class="modal fade" id="myModal" role="dialog" data-backdrop="false">
-    <div id="login-overlay" class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-              <h4 class="modal-title" id="myModalLabel">Register Online</h4>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-xs-6">
-                      <div class="well">
-                          <form id="loginForm" method="POST" action="/login/">
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="firstname" name="firstname" value="" required="true" title="firstname" placeholder="Please enter you Firstname">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="lastname" name="lastname" value="" required="true" title="Please enter your lastname" placeholder="Please enter you Lastname">
-                                  <span class="help-block"></span>
-                              </div>
-                               <div class="form-group">
-                                  <input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your email" placeholder="Please enter you Email address">
-                                  <span class="help-block"></span>
-                              </div>
-                               <div class="form-group">
-                                  <input type="text" class="form-control" id="Flatno" name="Flatno" value="" required="true" title="Please enter your Flat No. / House No." placeholder="Enter your Flat No. / House No.">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="building" name="building" value="" required="true" title="Please enter your building name" placeholder="Enter your Building Name">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="street" name="street" value="" required="true" title="Please enter your street name" placeholder="Enter Street Name">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="areaname" name="areaname" value="" required="true" title="Please enter Area Name" placeholder="Enter Area Name">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="city" name="city" value="" required="true" title="Please enter City" placeholder="Enter City">
-                                  <span class="help-block"></span>
-                              </div>
 
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="state" name="state" value="" required="true" title="Please enter your state" placeholder="Enter State">
-                                  <span class="help-block"></span>
-                              </div>
-
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="pincode" name="pincode" value="" required="true" title="Please enter Pincode" placeholder="Enter Pincode">
-                                  <span class="help-block"></span>
-                              </div>
-                              <div class="form-group">
-                                <label>Date Of Birth</label>
-                                    <input type="date" name="date_of_birth" id="date" class="form-control input-lg" placeholder="Enter Your Date Of Birth" tabindex="2">
-                              </div>
-
-                              <div class="form-group">
-                                <label for="">Gender</label>
-                                  <select class="form-control" id="sel1" required="true">
-                                      <option>Male</option>
-                                      <option>Female</option>
-                                  </select>
-                              </div>
-
-                              <div class="form-group">
-                                  <input type="text" class="form-control" id="address" name="address" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">
-                                  <span class="help-block"></span>
-                              </div>
-
-                              <button type="submit" class="btn btn-success btn-block">Proceed to Pay</button>
-                             <!--  <a href="#" class="btn btn-default btn-block">Help to login</a> -->
-                          </form>
-                      </div>
-                  </div>
-                  <div class="col-xs-6">
-                      <p class="lead">Register now for <span class="text-success">FREE</span></p>
-                      <ul class="list-unstyled" style="line-height: 2">
-                          <li><span class="fa fa-check text-success"></span> See all your orders</li>
-                          <li><span class="fa fa-check text-success"></span> Fast re-order</li>
-                          <li><span class="fa fa-check text-success"></span> Save your favorites</li>
-                          <li><span class="fa fa-check text-success"></span> Fast checkout</li>
-                          <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
-                          <li><a href="/read-more/"><u>Read more</u></a></li>
-                      </ul>
-                      <p><a href="/new-customer/" class="btn btn-info btn-block">Yes please, register now!</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  </div>
-<!-- .x-features -->
 
 <!-- <section class="team ptb-100">
     <section class="section-title">
@@ -684,4 +598,265 @@ th.tabco4 {
 <?php
 include("html/footer.html")
 ?>
+<div class="container">
+  <div class="modal fade" id="half-mar-modal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Online Registration</h4>
+      </div>
+      <div class="modal-body">
+
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/login/">
+                            <div class="row">
+                                  <div class="col-xs-12 col-lg-12">
+                                  <div class="col-xs-4 col-lg-4">
+                                    <label>Select Seats:</label>
+                                  </div>
+                                  
+                                  <div class="col-xs-3 col-lg-3">
+                                   <select name="tickets" id="numNames" onchange="calcamount(this);">
+                                   <option value="">0</option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                                </select>
+                                </div>
+                                <div class="col-xs-5 col-lg-5">
+                                  Total Price: <span id="priceSpan_mar">0</span>
+                                </div>
+                                </div>
+                                </div>
+                            <div id="elcontainer"></div>
+                              <!-- <button type="submit" class="btn btn-success btn-block">Proceed to Pay</button> -->
+                                <input value="0" id="price_mar" type="hidden" name="price" required="true" title="totalprice" readonly="true">
+            <input value="850" id="defaultprice_mar" type="hidden" name="defaultprice" required="true">
+           
+                              <button type="submit" class="btn btn-success btn-block pay-btn">Proceed to pay ( ₹ <span id="priceSpan_mar_proceed">0</span> )</button>
+                             
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+      
+  <div class="modal fade" id="tenk-mar-modal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Online Registration</h4>
+      </div>
+      <div class="modal-body">
+
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div class="well">
+                          <form id="loginForm" method="POST" action="/login/">
+                            <div class="row">
+                                  <div class="col-xs-12 col-lg-12">
+                                  <div class="col-xs-4 col-lg-4">
+                                    <label>Select Seats:</label>
+                                  </div>
+                                  
+                                  <div class="col-xs-3 col-lg-3">
+                                   <select name="tickets" id="numNames2" onchange="calcamount2(this);">
+                                   <option value="">0</option>
+                                   <option value="1">1</option>
+                                   <option value="2">2</option>
+                                   <option value="3">3</option>
+                                   <option value="4">4</option>
+                                   <option value="5">5</option>
+                                   <option value="6">6</option>
+                                   <option value="7">7</option>
+                                   <option value="8">8</option>
+                                   <option value="9">9</option>
+                                   <option value="10">10</option>
+                                </select>
+                                </div>
+                                <div class="col-xs-5 col-lg-5">
+                                  Total Price: <span id="priceSpan_mar2">0</span>
+                                </div>
+                                </div>
+                                </div>
+                            <div id="clcontainer"></div>
+                            <!--  <button type="submit" class="btn btn-success btn-block">Proceed to Pay</button> -->
+                               <input value="0" id="price_mar2" type="hidden" name="price" required="true" title="totalprice" readonly="true">
+            <input value="650" id="defaultprice_mar2" type="hidden" name="defaultprice2" required="true">
+           
+                              <button type="submit" class="btn btn-success btn-block pay-btn2">Proceed to pay ( ₹ <span id="priceSpan_mar_proceed">0</span> )</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js">
+webshims.setOptions('forms-ext', {types: 'date'});
+webshims.polyfill('forms forms-ext');
+</script>
+<script type="text/javascript">
+
+var el ='<br><br><div class="form-group">'+
+ ' <input type="text" class="form-control" id="firstname" name="firstname" value="" required="true" title="firstname" placeholder="Please enter you Firstname">'+
+            '</div>'+
+'<div class="form-group">'+
+ ' <input type="text" class="form-control" id="lastname" name="lastname" value="" required="true" title="Please enter your lastname" placeholder="Please enter you Lastname">'+
+            '</div>'+
+'<div class="form-group">'+
+   '<input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your email" placeholder="Please enter you Email address">'+
+'</div>'+
+'<div class="form-group">'+
+    // '<label for="">Gender</label>'+  
+    ' <select class="form-control" id="tshirt" required="true">'+
+                                      '<option value="">Tshirt Size</option>'+
+                                      '<option value="XS">XS</option>'+
+                                      '<option value="S">S</option>'+
+                                      '<option value="M">M</option>'+
+                                      '<option value="L">L</option>'+
+                                      '<option value="XL">XL</option>'+
+                                      '<option value="XXL">XXL</option>'+
+                                  '</select>'+ 
+'</div>'+
+'<div class="form-group">'+
+    // '<label for="">Gender</label>'+  
+    ' <select class="form-control" id="KM" required="true">'+
+                                      '<option value="">Select KM</option>'+
+                                      '<option value="10KM">10KM</option>'+
+                                      '<option value="21.1KM">21.1KM</option>'+
+                                  '</select>'+ 
+'</div>'+
+
+'<div class="form-group">'+
+    ' <input type="date" name="date_of_birth" id="date" class="form-control input-lg" placeholder="Enter Your Date Of Birth" tabindex="2">'+   
+'</div>'+
+'<div class="form-group">'+
+    // '<label for="">Gender</label>'+  
+    ' <select class="form-control" id="gender" required="true">'+
+                                      '<option>Male</option>'+
+                                      '<option>Female</option>'+
+                                  '</select>'+ 
+'</div>'+
+'<div class="form-group">'+
+    ' <input type="number" class="form-control" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">'+  
+'</div>'+
+'<br><br>';
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var cl ='<br><br><div class="form-group">'+
+ ' <input type="text" class="form-control" id="firstname" name="firstname" value="" required="true" title="firstname" placeholder="Please enter you Firstname">'+
+            '</div>'+
+'<div class="form-group">'+
+ ' <input type="text" class="form-control" id="lastname" name="lastname" value="" required="true" title="Please enter your lastname" placeholder="Please enter you Lastname">'+
+            '</div>'+
+'<div class="form-group">'+
+   '<input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your email" placeholder="Please enter you Email address">'+
+'</div>'+
+'<div class="form-group">'+
+    // '<label for="">Gender</label>'+  
+     ' <select class="form-control" id="tshirt" required="true">'+
+                                      '<option value="">Tshirt Size</option>'+
+                                      '<option value="XS">XS</option>'+
+                                      '<option value="S">S</option>'+
+                                      '<option value="M">M</option>'+
+                                      '<option value="L">L</option>'+
+                                      '<option value="XL">XL</option>'+
+                                      '<option value="XXL">XXL</option>'+
+                                  '</select>'+ 
+'</div>'+
+'<div class="form-group">'+
+    // '<label for="">Gender</label>'+  
+    ' <select class="form-control" id="KM" required="true">'+
+                                      '<option value="">Select KM</option>'+
+                                      '<option value="10KM">10KM</option>'+
+                                      '<option value="21.1KM">21.1KM</option>'+
+                                  '</select>'+ 
+'</div>'+
+'<div class="form-group">'+
+    ' <input type="date" name="date_of_birth" id="date" class="form-control input-lg" placeholder="Enter Your Date Of Birth" tabindex="2">'+   
+'</div>'+
+'<div class="form-group">'+
+    // '<label for="">Gender</label>'+  
+    ' <select class="form-control" id="gender" required="true">'+
+                                      '<option>Male</option>'+
+                                      '<option>Female</option>'+
+                                  '</select>'+ 
+'</div>'+
+'<div class="form-group">'+
+    ' <input type="number" class="form-control" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">'+   
+'</div>'+
+'<br><br>';
+
+$('#numNames').on('change', function(e) {
+  var numSelected = Number($(this).val());
+  appendControls1(numSelected);
+  if(numSelected == 0){
+    $(".pay-btn").css('display','none');
+  } else{
+   $(".pay-btn").css('display','block'); 
+}
+});
+
+function appendControls1(num) {
+  $('#elcontainer').empty();
+  var html = null;
+  for (var i=0; i<num; i++) {
+    $('#elcontainer').append(el); 
+  } 
+}
+function calcamount(tkt){
+  var tktcount = tkt.value;
+  var price = $('#defaultprice_mar').val();
+    $('#price_mar').val(tktcount * price);
+  $("#priceSpan_mar").text(tktcount * price); 
+  $("#priceSpan_mar_proceed").text(tktcount * price); 
+}
+
+
+$('#numNames2').on('change', function(e) {
+  var numSelected = Number($(this).val());
+  appendControls2(numSelected);
+  if(numSelected == 0){
+    $(".pay-btn2").css('display','none');
+  } else{
+   $(".pay-btn2").css('display','block'); 
+}
+});
+
+function appendControls2(num) {
+  $('#clcontainer').empty();
+  var html = null;
+  for (var i=0; i<num; i++) {
+    $('#clcontainer').append(cl); 
+  } 
+}
+function calcamount2(tkt){
+  var tktcount = tkt.value;
+  var price = $('#defaultprice_mar2').val();
+    $('#price_mar2').val(tktcount * price);
+  $("#priceSpan_mar2").text(tktcount * price); 
+  $("#priceSpan_mar_proceed2").text(tktcount * price); 
+}
+</script>
 
