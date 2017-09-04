@@ -754,6 +754,20 @@ var el ='<br><br><div class="form-group">'+
                                   '</select>'+ 
 '</div>'+
 '<div class="form-group">'+
+            // '<label for="">Blood Group</label>'+
+              '<select class="form-control" id="bloodgroup" name="Blood" required>'+
+                 '<option value="">Select Bloood Group</option>'+
+                '<option value="A+">A+</option>'+
+                '<option value="A-">A-</option>'+
+                '<option value="B+">B+</option>'+
+                '<option value="B-">B-</option>'+
+                '<option value="O+">O+</option>'+
+                '<option value="O-">O-</option>'+
+                '<option value="AB+">AB+</option>'+
+                '<option value="AB-">AB-</option>'+
+              '</select>'+
+          '</div>'+
+'<div class="form-group">'+
     ' <input type="number" class="form-control" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">'+  
 '</div>'+
 '<br><br>';
@@ -798,6 +812,19 @@ var cl ='<br><br><div class="form-group">'+
                                       '<option>Female</option>'+
                                   '</select>'+ 
 '</div>'+
+'<div class="form-group">'+
+            '<label for="">Blood Group</label>'+
+              '<select class="form-control" id="sel1" name="Blood" required>'+
+                '<option value="A+">A+</option>'+
+                '<option value="A-">A-</option>'+
+                '<option value="B+">B+</option>'+
+                '<option value="B-">B-</option>'+
+                '<option value="O+">O+</option>'+
+                '<option value="O-">O-</option>'+
+                '<option value="AB+">AB+</option>'+
+                '<option value="AB-">AB-</option>'+
+              '</select>'+
+          '</div>'+
 '<div class="form-group">'+
     ' <input type="number" class="form-control" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">'+   
 '</div>'+
