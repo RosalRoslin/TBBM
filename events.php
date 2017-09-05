@@ -155,6 +155,76 @@ th.tabco4 {
 input[type='number'] {
     -moz-appearance:textfield;
 }
+.float-label-control { position: relative; margin-bottom: 1.5em; }
+  /*.float-label-control ::-webkit-input-placeholder { color: transparent; }
+  .float-label-control :-moz-placeholder { color: transparent; }
+  .float-label-control ::-moz-placeholder { color: transparent; }
+  .float-label-control :-ms-input-placeholder { color: transparent; }*/
+  .float-label-control input:-webkit-autofill,
+  .float-label-control textarea:-webkit-autofill { background-color: transparent !important; -webkit-box-shadow: 0 0 0 1000px white inset !important; -moz-box-shadow: 0 0 0 1000px white inset !important; box-shadow: 0 0 0 1000px white inset !important; }
+  .float-label-control input, .float-label-control textarea, .float-label-control label { font-size: 1.2em; box-shadow: none; -webkit-box-shadow: none; }
+    .float-label-control input:focus,
+    .float-label-control textarea:focus { box-shadow: none; -webkit-box-shadow: none; border-bottom-width: 2px; padding-bottom: 0; background: none; }
+    .float-label-control textarea:focus { padding-bottom: 4px; }
+  .float-label-control input, .float-label-control textarea { display: block; width: 100%; padding: 0.1em 0em 1px 0em; border: none; border-radius: 0px; border-bottom: 1px solid #aaa; outline: none; margin: 0px; background: none;font-size: 14px; }
+  .float-label-control textarea { padding: 0.1em 0em 5px 0em; }
+  .float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; color: #aaaaaa; z-index: -1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
+  .float-label-control input.empty + label,
+  .float-label-control textarea.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }
+  .float-label-control input:not(.empty) + label,
+  .float-label-control textarea:not(.empty) + label { z-index: 1; }
+  .float-label-control input:not(.empty):focus + label,
+  .float-label-control textarea:not(.empty):focus + label { color: #aaaaaa; }
+  .float-label-control.label-bottom label { -moz-animation: float-labels-bottom 300ms none ease-out; -webkit-animation: float-labels-bottom 300ms none ease-out; -o-animation: float-labels-bottom 300ms none ease-out; -ms-animation: float-labels-bottom 300ms none ease-out; -khtml-animation: float-labels-bottom 300ms none ease-out; animation: float-labels-bottom 300ms none ease-out; }
+  .float-label-control.label-bottom input:not(.empty) + label,
+  .float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }
+
+
+@keyframes float-labels {
+  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+  20% { font-size: 1.5em; opacity: 0; }
+  30% { top: 0.1em; }
+  50% { opacity: 0; font-size: 0.85em; }
+  100% { top: -1em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels {
+  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+  20% { font-size: 1.5em; opacity: 0; }
+  30% { top: 0.1em; }
+  50% { opacity: 0; font-size: 0.85em; }
+  100% { top: -1em; opacity: 1; }
+}
+
+@keyframes float-labels-bottom {
+  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+  20% { font-size: 1.5em; opacity: 0; }
+  30% { top: 0.1em; }
+  50% { opacity: 0; font-size: 0.85em; }
+  100% { top: 3em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels-bottom {
+  0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+  20% { font-size: 1.5em; opacity: 0; }
+  30% { top: 0.1em; }
+  50% { opacity: 0; font-size: 0.85em; }
+  100% { top: 3em; opacity: 1; }
+}
+
+.float-form:focus{
+  border-bottom: 1px solid #31aae2 !important;
+  border-left: none !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+/*@media screen and (min-width: 768px)
+and (max-width: 1920px){
+.form-size{
+  width: 20% !important;
+}
+}*/
 </style>
 <!-- <video class="tatsu-bg-video" autoplay="autoplay" loop="loop" muted="muted" preload="auto" style="width:100%; height: 720px; left: 0px; top: -137.5px; display: block;object-fit:cover;"><source src="video/Marathon.mp4" type="video/mp4"></video> -->
 <!-- <div id="x-corp-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
@@ -382,7 +452,7 @@ input[type='number'] {
 <tr>
 <td class="tabco1"></td>
 <td class="tabco2" ><button class="btn btn-primary" data-toggle="modal" data-target="#half-mar-modal">Register Now</button></td>
-<td class="tabco3" ><button class="btn btn-primary" data-toggle="modal" data-target="#tenk-mar-modal">Register Now</button></td>
+<td class="tabco3" ><button class="btn btn-primary" style="display: none;" data-toggle="modal" data-target="#tenk-mar-modal">Register Now</button></td>
 </tr>
 </tbody>
 </table>
@@ -589,13 +659,16 @@ input[type='number'] {
     <!--end of .container -->
 </section>
 <!-- /.client-logo --> 
-
+<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js">
+webshims.setOptions('forms-ext', {id: '#date'});
+webshims.polyfill('forms forms-ext');
+</script>
 <?php
 include("html/footer.html")
 ?>
 <div class="container">
   <div class="modal fade" id="half-mar-modal" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
@@ -621,11 +694,11 @@ include("html/footer.html")
                                    <option value="3">3</option>
                                    <option value="4">4</option>
                                    <option value="5">5</option>
-                                   <option value="6">6</option>
+                                   <!-- <option value="6">6</option>
                                    <option value="7">7</option>
                                    <option value="8">8</option>
                                    <option value="9">9</option>
-                                   <option value="10">10</option>
+                                   <option value="10">10</option> -->
                                 </select>
                                 </div>
                                 <div class="col-xs-5 col-lg-5">
@@ -633,10 +706,27 @@ include("html/footer.html")
                                 </div>
                                 </div>
                                 </div>
+                                <div class="row">
+                                
+                              
+                                <div class="col-md-6 col-lg-6 col-xs-12">
+                                  <div class="form-group float-label-control label-bottom">
+                                  <label for="">Email Address</label>
+                                     <input type="email" class="form-control float-form" id="email" name="email" required="true" title="Please enter your email" placeholder="Please enter you Email address">
+                                  </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-6 col-xs-12">
+                                  <div class="form-group float-label-control label-bottom">
+                                  <label for="">Mobile Number</label>
+                                       <input type="number" class="form-control float-form" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Please enter your mobile number">  
+                                  </div>
+                                  </div>
+                                </div>
                             <div id="elcontainer"></div>
                               <!-- <button type="submit" class="btn btn-success btn-block">Proceed to Pay</button> -->
-                                <input value="0" id="price_mar" type="hidden" name="price" required="true" title="totalprice" readonly="true">
-            <input value="850" id="defaultprice_mar" type="hidden" name="defaultprice" required="true">
+                                <input value="0" id="price_mar" type="hidden" name="price_mar" required="true" title="totalprice" readonly="true">
+           <!--  <input value="850" id="defaultprice_mar" type="hidden" name="defaultprice" required="true"> -->
            
                               <button type="submit" class="btn btn-success btn-block pay-btn">Proceed to pay ( ₹ <span id="priceSpan_mar_proceed">0</span> )</button>
                              
@@ -650,9 +740,7 @@ include("html/footer.html")
   </div>
 </div>
 
-<div class="container">
-
-      
+<!-- <div class="container">
   <div class="modal fade" id="tenk-mar-modal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -693,9 +781,9 @@ include("html/footer.html")
                                 </div>
                                 </div>
                             <div id="clcontainer"></div>
-                            <!--  <button type="submit" class="btn btn-success btn-block">Proceed to Pay</button> -->
+                            
                                <input value="0" id="price_mar2" type="hidden" name="price" required="true" title="totalprice" readonly="true">
-            <input value="650" id="defaultprice_mar2" type="hidden" name="defaultprice2" required="true">
+                              <input value="650" id="defaultprice_mar2" type="hidden" name="defaultprice2" required="true">
            
                               <button type="submit" class="btn btn-success btn-block pay-btn2">Proceed to pay ( ₹ <span id="priceSpan_mar_proceed">0</span> )</button>
                           </form>
@@ -706,23 +794,20 @@ include("html/footer.html")
         </div>
     </div>
   </div>
-</div>
-<script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js">
-webshims.setOptions('forms-ext', {types: 'date'});
-webshims.polyfill('forms forms-ext');
-</script>
+</div>  -->         
+
 <script type="text/javascript">
 
-var el ='<br><br><div class="form-group">'+
- ' <input type="text" class="form-control" id="firstname" name="firstname" value="" required="true" title="firstname" placeholder="Please enter you Firstname">'+
-            '</div>'+
-'<div class="form-group">'+
- ' <input type="text" class="form-control" id="lastname" name="lastname" value="" required="true" title="Please enter your lastname" placeholder="Please enter you Lastname">'+
-            '</div>'+
-'<div class="form-group">'+
-   '<input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your email" placeholder="Please enter you Email address">'+
-'</div>'+
-'<div class="form-group">'+
+var el =
+'<div class="row parent-row"><input class="parentRowAmt" value="0" type="hidden" /><div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
+  '<div class="form-group float-label-control label-bottom">'+
+    '<label for="">Fullname</label>'+
+    '<input type="text" class="form-control float-form" id="fullname" name="fullname" required="true" title="fullname" placeholder="Please enter you Fullname">'+
+  '</div>'+
+  '</div>'+
+
+'<div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
+'<div class="form-group float-label-control label-bottom">'+
     // '<label for="">Gender</label>'+  
     ' <select class="form-control" id="tshirt" required="true">'+
                                       '<option value="">Tshirt Size</option>'+
@@ -734,113 +819,31 @@ var el ='<br><br><div class="form-group">'+
                                       '<option value="XXL">XXL</option>'+
                                   '</select>'+ 
 '</div>'+
-'<div class="form-group">'+
+'</div>'+
+'<div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
+'<div class="form-group float-label-control label-bottom">'+
     // '<label for="">Gender</label>'+  
-    ' <select class="form-control" id="KM" required="true">'+
+    ' <select class="form-control select-km" id="KM" required="true">'+
                                       '<option value="">Select KM</option>'+
                                       '<option value="10KM">10KM</option>'+
                                       '<option value="21.1KM">21.1KM</option>'+
                                   '</select>'+ 
 '</div>'+
-
-'<div class="form-group">'+
-    ' <input type="date" name="date_of_birth" id="date" class="form-control input-lg" placeholder="Enter Your Date Of Birth" tabindex="2">'+   
 '</div>'+
+'<div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
 '<div class="form-group">'+
     // '<label for="">Gender</label>'+  
     ' <select class="form-control" id="gender" required="true">'+
+                                      '<option value="">Select Gender</option>'+
                                       '<option>Male</option>'+
                                       '<option>Female</option>'+
                                   '</select>'+ 
 '</div>'+
-'<div class="form-group">'+
-            // '<label for="">Blood Group</label>'+
-              '<select class="form-control" id="bloodgroup" name="Blood" required>'+
-                 '<option value="">Select Bloood Group</option>'+
-                '<option value="A+">A+</option>'+
-                '<option value="A-">A-</option>'+
-                '<option value="B+">B+</option>'+
-                '<option value="B-">B-</option>'+
-                '<option value="O+">O+</option>'+
-                '<option value="O-">O-</option>'+
-                '<option value="AB+">AB+</option>'+
-                '<option value="AB-">AB-</option>'+
-              '</select>'+
-          '</div>'+
-'<div class="form-group">'+
-    ' <input type="number" class="form-control" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">'+  
 '</div>'+
 '<br><br>';
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-var cl ='<br><br><div class="form-group">'+
- ' <input type="text" class="form-control" id="firstname" name="firstname" value="" required="true" title="firstname" placeholder="Please enter you Firstname">'+
-            '</div>'+
-'<div class="form-group">'+
- ' <input type="text" class="form-control" id="lastname" name="lastname" value="" required="true" title="Please enter your lastname" placeholder="Please enter you Lastname">'+
-            '</div>'+
-'<div class="form-group">'+
-   '<input type="email" class="form-control" id="email" name="email" value="" required="true" title="Please enter your email" placeholder="Please enter you Email address">'+
-'</div>'+
-'<div class="form-group">'+
-    // '<label for="">Gender</label>'+  
-     ' <select class="form-control" id="tshirt" required="true">'+
-                                      '<option value="">Tshirt Size</option>'+
-                                      '<option value="XS">XS</option>'+
-                                      '<option value="S">S</option>'+
-                                      '<option value="M">M</option>'+
-                                      '<option value="L">L</option>'+
-                                      '<option value="XL">XL</option>'+
-                                      '<option value="XXL">XXL</option>'+
-                                  '</select>'+ 
-'</div>'+
-'<div class="form-group">'+
-    // '<label for="">Gender</label>'+  
-    ' <select class="form-control" id="KM" required="true">'+
-                                      '<option value="">Select KM</option>'+
-                                      '<option value="10KM">10KM</option>'+
-                                      '<option value="21.1KM">21.1KM</option>'+
-                                  '</select>'+ 
-'</div>'+
-'<div class="form-group">'+
-    ' <input type="date" name="date_of_birth" id="date" class="form-control input-lg" placeholder="Enter Your Date Of Birth" tabindex="2">'+   
-'</div>'+
-'<div class="form-group">'+
-    // '<label for="">Gender</label>'+  
-    ' <select class="form-control" id="gender" required="true">'+
-                                      '<option>Male</option>'+
-                                      '<option>Female</option>'+
-                                  '</select>'+ 
-'</div>'+
-'<div class="form-group">'+
-            '<label for="">Blood Group</label>'+
-              '<select class="form-control" id="sel1" name="Blood" required>'+
-                '<option value="A+">A+</option>'+
-                '<option value="A-">A-</option>'+
-                '<option value="B+">B+</option>'+
-                '<option value="B-">B-</option>'+
-                '<option value="O+">O+</option>'+
-                '<option value="O-">O-</option>'+
-                '<option value="AB+">AB+</option>'+
-                '<option value="AB-">AB-</option>'+
-              '</select>'+
-          '</div>'+
-'<div class="form-group">'+
-    ' <input type="number" class="form-control" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Enter Mobile number">'+   
-'</div>'+
-'<br><br>';
 
-$('#numNames').on('change', function(e) {
-  var numSelected = Number($(this).val());
-  appendControls1(numSelected);
-  if(numSelected == 0){
-    $(".pay-btn").css('display','none');
-  } else{
-   $(".pay-btn").css('display','block'); 
-}
-});
-
-function appendControls1(num) {
+function appendControls(num) {
   $('#elcontainer').empty();
   var html = null;
   for (var i=0; i<num; i++) {
@@ -848,37 +851,146 @@ function appendControls1(num) {
   } 
 }
 function calcamount(tkt){
-  var tktcount = tkt.value;
-  var price = $('#defaultprice_mar').val();
-    $('#price_mar').val(tktcount * price);
-  $("#priceSpan_mar").text(tktcount * price); 
-  $("#priceSpan_mar_proceed").text(tktcount * price); 
+    $('#price_mar').val("0");
+  $("#priceSpan_mar").text("0");
 }
 
+$("#elcontainer").on('change', '.select-km', function(e){
+      var val = $(this).val();
+      var amt = parseInt($('#price_mar').val());
+      var finalAmt = (amt == "") ? 0 : amt;
+      //console.log(val);
+      var parentRow = $(this).parent().parent().parent().parent();
+      var parentAmtVal = parseInt(parentRow.find(".parentRowAmt").val());
 
-$('#numNames2').on('change', function(e) {
+      if(val != ""){
+        if(val == "10KM"){
+          var fixedAmt = 650;
+          // parentRow.find(".select-age option").hide();
+          // parentRow.find(".select-age option[value='Minimum age 10 yrs to 15 yrs']").show();
+        }
+        else if(val == "21.1KM"){
+          var fixedAmt = 850;
+          // parentRow.find(".select-age option").hide();
+          // parentRow.find(".select-age option[value='Minimum age 15 yrs to 50 yrs']").show();
+        }
+        else {
+          //parentRow.find(".select-age option").hide();
+        }
+
+        if(parentAmtVal == 0) {
+          parentRow.find(".parentRowAmt").val(fixedAmt);
+          finalAmt = finalAmt + fixedAmt;
+        }
+        else {
+          finalAmt = finalAmt - parentAmtVal;
+          finalAmt = finalAmt + fixedAmt;
+          parentRow.find(".parentRowAmt").val(fixedAmt);
+        }
+      }
+      // else {
+      //   parentRow.find(".select-age option").show();
+      //   finalAmt = finalAmt - parentAmtVal;
+      //   parentRow.find(".parentRowAmt").val(0);
+      // }
+
+      $('#price_mar').val(finalAmt);
+      $('#priceSpan_mar').html(finalAmt);
+      $('#priceSpan_mar_proceed').html(finalAmt);
+    });
+
+$('#numNames').on('change', function(e) {
   var numSelected = Number($(this).val());
-  appendControls2(numSelected);
+  appendControls(numSelected);
   if(numSelected == 0){
-    $(".pay-btn2").css('display','none');
+    $(".pay-btn").css('display','none');
   } else{
-   $(".pay-btn2").css('display','block'); 
+   $(".pay-btn").css('display','block'); 
 }
 });
+(function ($) {
+  $.fn.floatLabels = function (options) {
 
-function appendControls2(num) {
-  $('#clcontainer').empty();
-  var html = null;
-  for (var i=0; i<num; i++) {
-    $('#clcontainer').append(cl); 
-  } 
-}
-function calcamount2(tkt){
-  var tktcount = tkt.value;
-  var price = $('#defaultprice_mar2').val();
-    $('#price_mar2').val(tktcount * price);
-  $("#priceSpan_mar2").text(tktcount * price); 
-  $("#priceSpan_mar_proceed2").text(tktcount * price); 
-}
+    // Settings
+    var self = this;
+    var settings = $.extend({}, options);
+
+
+    // Event Handlers
+    function registerEventHandlers() {
+      self.on('input keyup change', 'input, textarea', function () {
+        actions.swapLabels(this);
+      });
+    }
+
+
+    // Actions
+    var actions = {
+      initialize: function() {
+        self.each(function () {
+          var $this = $(this);
+          var $label = $this.children('label');
+          var $field = $this.find('input,textarea').first();
+
+          if ($this.children().first().is('label')) {
+            $this.children().first().remove();
+            $this.append($label);
+          }
+
+          var placeholderText = ($field.attr('placeholder') && $field.attr('placeholder') != $label.text()) ? $field.attr('placeholder') : $label.text();
+
+          $label.data('placeholder-text', placeholderText);
+          $label.data('original-text', $label.text());
+
+          if ($field.val() == '') {
+            $field.addClass('empty')
+          }
+        });
+      },
+      swapLabels: function (field) {
+        var $field = $(field);
+        var $label = $(field).siblings('label').first();
+        var isEmpty = Boolean($field.val());
+
+        if (isEmpty) {
+          $field.removeClass('empty');
+          $label.text($label.data('original-text'));
+        }
+        else {
+          $field.addClass('empty');
+          $label.text($label.data('placeholder-text'));
+        }
+      }
+    }
+
+
+    // Initialization
+    function init() {
+      registerEventHandlers();
+
+      actions.initialize();
+      self.each(function () {
+        actions.swapLabels($(this).find('input,textarea').first());
+      });
+    }
+    init();
+
+
+    return this;
+  };
+
+  $(function () {
+    jQuery('.form-element').each(function(){
+      if($(this).parent().hasClass('required')){
+       jQuery('.form-element').unwrap();
+      }
+    });
+
+    setTimeout(function(){
+      $('.float-label-control').floatLabels();
+    },1000);
+  });
+})(jQuery);
 </script>
+
 
