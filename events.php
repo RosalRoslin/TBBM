@@ -451,7 +451,7 @@ and (max-width: 1920px){
 </tr>
 <tr>
 <td class="tabco1"></td>
-<td class="tabco2" ><button class="btn btn-primary" data-toggle="modal" data-target="#half-mar-modal">Register Now</button></td>
+<td class="tabco2" ><button class="btn btn-primary" data-toggle="modal" data-target="#half-mar-modal" data-backdrop="static" data-keyboard="false">Register Now</button></td>
 <td class="tabco3" ><button class="btn btn-primary" style="display: none;" data-toggle="modal" data-target="#tenk-mar-modal">Register Now</button></td>
 </tr>
 </tbody>
@@ -991,6 +991,8 @@ $('#numNames').on('change', function(e) {
     },1000);
   });
 })(jQuery);
+
+
 </script>
 
 
