@@ -840,6 +840,7 @@ var el =
                                   '</select>'+ 
 '</div>'+
 '</div>'+
+'</div>'+
 '<br><br>';
 
 

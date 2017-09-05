@@ -67,6 +67,10 @@ include("html/header.html")
     margin-top: 35px;
     text-align: justify;
 }
+.x-features .promo-icon{
+    height: 30px;
+    width: 30px;
+}
 </style>
 
 
@@ -140,7 +144,7 @@ include("html/header.html")
     <section class="service-icon-style ptb-100">
     <section class="section-title">
         <div class="container text-center">
-            <h2>Our Sponsors!</h2>
+            <h2>Our Sponsors</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
@@ -263,7 +267,7 @@ printed materials.</p>
                 <!-- /.promo-block-wrapper -->
 
                 <div class="promo-block-wrapper clearfix">
-                    <div class="promo-icon" style="margin-right: 15px;">
+                    <div class="promo-icon">
                         <i class="fa fa-line-chart"></i>
                     </div>
                     <div class="promo-content">

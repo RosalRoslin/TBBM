@@ -42,7 +42,7 @@ include("html/header.html")
 <section class="about-text ptb-100">
     <section class="section-title">
         <div class="container text-center">
-            <h2>Bulk Registration For Corporates</h2>
+            <h2>Exclusive For Corporates</h2>
             <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
         </div>
     </section>
@@ -50,11 +50,11 @@ include("html/header.html")
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p>We are providing benefits to corporates who motivate their employees to participate in The Big Beach marathon. We offer 20% discount for corporate bulk bookings in both 10K and half marathon categories. Authorized personal from the organizations can contact us for bulk booking.
+                <p>We are providing benefits to corporates who motivate their employees to participate in The Big Beach marathon. We offer 15% discount for corporate <span style="font-weight: bold;">bulk bookings</span> in both 10K and half marathon categories. Authorized personal from the organizations can contact us for bulk booking.
 
 Upon receipt of the booking and the payment (through Cheque/DD/Online payment), we would ship the goodie bags along with the BIBs to the respective designated authorities.
 
-<br><br>Please check our "Contact Us" page for communication media.</p>
+<br><br>Please check our<a href="contact.php"> "Contact Us"</a>page for communication media.</p>
             </div>
             <!-- <div class="col-md-6">
                 <p>Completely pontificate timely metrics rather than accurate growth strategies. Seamlessly impact
@@ -301,7 +301,7 @@ Upon receipt of the booking and the payment (through Cheque/DD/Online payment), 
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond.png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/Raymond-new.png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -309,7 +309,7 @@ Upon receipt of the booking and the payment (through Cheque/DD/Online payment), 
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio.png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/O2-Health-Studio.png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">

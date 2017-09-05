@@ -1,6 +1,6 @@
 <?php
 
-	 $DBhost = "127.0.0.1";
+	 $DBhost = "localhost";
 	 $DBuser = "root";
 	 $DBpass = "";
 	 $DBname = "thebigbeachmarathon";

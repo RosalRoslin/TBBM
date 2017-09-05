@@ -132,7 +132,7 @@ and (max-width: 1366px){
 .x-features .promo-content {
     color: white;
     overflow: hidden;
-    border-bottom: 1px solid rgba(157, 209, 246, 0.4);
+    border-bottom: none !important;
     margin-bottom: 20px;
     padding-bottom: 10px;
     padding-top: 15px;
@@ -202,7 +202,7 @@ and (max-width: 1366px){
         <h1 id="first-title">Nothing pushes you more than running.<span id="second-title">Just run.</span></h1>
         <center> 
                 <div class="col-md-12 text-center btn-mem">
-                <a href="join.php" class="btn btn-lg btn-primary member-btn">Become a Member</a>
+                <a href="#" class="btn btn-lg btn-primary member-btn" style="cursor: not-allowed;" disabled data-toggle="tooltip" title="Check out this link shortly for exciting offers and merchandise!">Become a Member</a>
                 </div>
             </center>
     </div>
@@ -562,7 +562,7 @@ and (max-width: 1366px){
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/Raymond-new.png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -570,7 +570,7 @@ and (max-width: 1366px){
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/O2-Health-Studio.png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -588,5 +588,12 @@ and (max-width: 1366px){
 <?php
 include("html/footer.html")
 ?>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+</script>
 
 

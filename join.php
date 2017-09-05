@@ -30,7 +30,9 @@ background-color: #e2e2e2 !important;
 border-color: #313131 !important;
 color: #313131 !important;
 }
-
+.login-form-padding{
+  padding-bottom: 40px;
+}
 </style>
 
 <section class="x-services ptb-100 gray-bg">
@@ -94,7 +96,7 @@ color: #313131 !important;
                       </div>
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                      <div class="well">
+                      <div class="well login-form-padding">
                           <form  method="post" action="class/login.php" id="login-form">
                               <!-- <?php
                                 if (isset($_SESSION['login_error'])) {
@@ -114,7 +116,7 @@ color: #313131 !important;
                               </div>
                               <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
                               <button type="submit" name="btn-login" id="btn-login" class="btn btn-success btn-block">Login</button>
-                              <a href="forgot.php" class="btn btn-default btn-block btn-forg">Forgot Password</a>
+                              <a href="forgot.php" style="float: right;margin-top: 10px;">Forgot Password?</a>
                           </form>
                       </div>
                   </div>
