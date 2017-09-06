@@ -155,6 +155,202 @@ th.tabco4 {
 input[type='number'] {
     -moz-appearance:textfield;
 }
+
+
+/*
+Author: Bootstrapthemes
+Author URI: http://bootstrapthemes.co
+*/
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+.roomy-50{
+    padding:50px 0px;
+} 
+.p-top-100{
+    padding:100px;
+}
+
+
+
+
+
+/* ======= PRICING ======= */
+
+
+
+.bs-pricing-four {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.bs-pricing {
+    background:#fff;
+}
+.bs-pricing-four .btn,
+.bs-pricing-four .navbar > li > a.btn {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bs-pricing-four .btn {
+    border-radius: 30px;
+}
+
+
+
+
+
+/* btn-danger */
+.bs-pricing-four .btn.btn-danger {
+    color: #FFFFFF;
+    background-color: #f44336;
+    border-color: #f44336;
+    box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
+}
+
+.bs-pricing-four .btn.btn-danger:focus,
+.bs-pricing-four .btn.btn-danger:active,
+.bs-pricing-four .btn.btn-danger:hover {
+    box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+}
+
+
+/* btn-success */
+.bs-pricing-four .btn.btn-success {
+    color: #FFFFFF;
+    background-color: #4caf50;
+    border-color: #4caf50;
+    box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
+}
+
+.bs-pricing-four .btn.btn-success:focus,
+.bs-pricing-four .btn.btn-success:active,
+.bs-pricing-four .btn.btn-success:hover {
+    box-shadow: 0 14px 26px -12px rgba(76, 175, 80, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
+}
+
+
+
+
+/* btn-white */
+.bs-pricing-four .btn.btn-white {
+    color: #3C4857;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+}
+
+.bs-pricing-four .btn.btn-white:focus,
+.bs-pricing-four .btn.btn-white:active,
+.bs-pricing-four .btn.btn-white:hover {
+  box-shadow:  0 14px 26px -12px rgba(255, 255, 255, 0.42), 0 4px 23px 0px rgba(255, 255, 255, 0.12), 0 8px 10px -5px rgba(255, 255, 255, 0.2)
+}
+
+
+
+
+
+
+
+
+.bs-pricing-four .bs {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: #444;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.bs-pricing-four .bs.bs-background-img{
+    background: url(images/pricing-bg-image.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+.bs-pricing-four .bs.bs-background-img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+.bs-pricing-four .bs-background-img,
+.bs-pricing-four .bs-background-img h1 small{
+    color:#fff ;
+}
+.bg-danger{background-color: #f44336}
+
+.bs-pricing-four .bg-danger,
+.bs-pricing-four .bg-danger h1 small
+{
+    color:#fff;
+}
+
+
+.bs-pricing-four .bs-background-img:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: bs;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.56);
+    border-radius: 6px;
+}
+
+.bs-pricing-four .bs-pricing {
+    text-align: center;
+    position: relative;
+}
+
+.bs-pricing-four .bs-pricing .bs-caption {
+    margin-top: 30px;
+}
+
+.bs-pricing-four .bs-pricing .cotent {
+    padding: 15px;
+    margin-bottom: 0px;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.bs-pricing-four .bs-pricing ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+
+}
+
+.bs-pricing-four .bs-pricing ul li {
+    text-align: center;
+    padding: 12px 0;
+}
+.bs-pricing-four .bs-pricing ul:not(.nav-pills) li{
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+
+
+
+
 .float-label-control { position: relative; margin-bottom: 1.5em; }
   /*.float-label-control ::-webkit-input-placeholder { color: transparent; }
   .float-label-control :-moz-placeholder { color: transparent; }
@@ -405,61 +601,87 @@ and (max-width: 1920px){
                 <!-- /.promo-block-wrapper -->
 
             <!-- </div> -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <div id="">
-        <div class="container">
-        <!-- <h2>Our Sample Pricing</h2> -->
-            <div class="row">
-        <table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th class="tabco1 "></th>
-<th class="tabco2" >Half Marathon</th>
-<th class="tabco3">10K</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tabco1" >Event fee</td>
-<td class="tabco2" >850 INR</td>
-<td class="tabco3">650 INR</td>
-</tr>
-<tr>
-<td class="tabco1" >Start Time</td>
-<td class="tabco2" >Would be published before race day</td>
-<td class="tabco3" >Would be published before race day</td>
-</tr>
-<tr>
-<td class="tabco1" >Route map</td>
-<td class="tabco2" >Would be published before race day</td>
-<td class="tabco3" >Would be published before race day</td>
-</tr>
-<tr>
-<td class="tabco1" >Goodie bag </td>
-<td class="tabco2" >T shirt/Bib/Sponsor merchandise</td>
-<td class="tabco3" >T shirt/Bib/Sponsor merchandise</td>
-</tr>
-<tr>
-<td class="tabco1" >Medals</td>
-<td class="tabco2" >For all finishers</td>
-<td class="tabco3" >For all finishers</td>
-</tr>
-<tr>
-<td class="tabco1">Trophies and cash price</td>
-<td class="tabco2" >For first 3 winners in each demographics. Details would be published before the race day</td>
-<td class="tabco3" >For first 3 winners in each demographics. Details would be published before the race day</td>
-</tr>
-<tr>
-<td class="tabco1"></td>
-<td class="tabco2" ><button class="btn btn-primary" data-toggle="modal" data-target="#half-mar-modal" data-backdrop="static" data-keyboard="false">Register Now</button></td>
-<td class="tabco3" ><button class="btn btn-primary" style="display: none;" data-toggle="modal" data-target="#tenk-mar-modal">Register Now</button></td>
-</tr>
-</tbody>
-</table>
-      </div><!--row-->
-    </div><!--container-->
-</div><!--PricingTab-->
-
+ <section id="bs-pricing-six" class="bs-pricing-four roomy-50 bg-white fix">
+            <div class="container">
+                <div class="row">
+                   <!--  <div class="col-md-3">
+                        <div class="bs bs-pricing">
+                            <div class="cotent">
+                                <h3 class="category">Personal</h3>
+                                <h1 class="bs-caption"><small>$</small>11</h1>
+                                <ul>
+                                    <li><b>5 GB</b> Space</li>
+                                    <li><b>2 GB</b> RAM</li>
+                                    <li><b>24/7</b> Tech Support</li>
+                                    <li><b>Auto</b> Backup</li>
+                                    <li>Monthly Backups</li>
+                                    <li>8 CPU Core</li>
+                                </ul>
+                                <a href="https://bootstrapthemes.co" class="btn btn-danger">Buy Now</a>  
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-offset-3">
+                    <div class="col-md-4">
+                        <div class="bs bs-pricing">
+                            <div class="cotent">
+                                <h3 class="category">Half Marathon</h3>
+                                <h1 class="bs-caption"><small>₹</small>850</h1>
+                                <ul>
+                                    <li><b>Start Time</b><br>Would be published before race day</li>
+                                    <li><b>Route map</b><br>Would be published before race day</li>
+                                    <li><b>Goodie bag</b><br>T shirt/Bib/Sponsor merchandise</li>
+                                    <li><b>Medals</b><br>For all finishers</li>
+                                    <li><b>Trophies and cash price</b><br>For first 3 winners in each demographics. Details would be published before the race day</li>
+                                </ul>
+                                <!-- <a href="#" class="btn btn-danger">Buy Now</a>   -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bs bs-pricing">
+                            <div class="cotent">
+                                <h3 class="category">10K Run</h3>
+                                <h1 class="bs-caption"><small>₹</small>650</h1>
+                                <ul>
+                                    <li><b>Start Time</b><br>Would be published before race day</li>
+                                    <li><b>Route map</b><br>Would be published before race day</li>
+                                    <li><b>Goodie bag</b><br>T shirt/Bib/Sponsor merchandise</li>
+                                    <li><b>Medals</b><br>For all finishers</li>
+                                    <li><b>Trophies and cash price</b><br>For first 3 winners in each demographics. Details would be published before the race day</li>
+                                </ul>
+                               <!--  <a href="#" class="btn btn-white">Buy Now</a>  -->
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  <!--   <div class="col-md-3">
+                        <div class="bs bs-pricing">
+                            <div class="cotent">
+                                <h3 class="category">Professional</h3>
+                                <h1 class="bs-caption"><small>$</small>25</h1>
+                                <ul>
+                                    <li><b>5 GB</b> Space</li>
+                                    <li><b>2 GB</b> RAM</li>
+                                    <li><b>24/7</b> Tech Support</li>
+                                    <li><b>Auto</b> Backup</li>
+                                    <li>Monthly Backups</li>
+                                    <li>8 CPU Core</li>
+                                </ul>
+                                <a href="https://bootstrapthemes.co" class="btn btn-danger">Buy Now</a>  
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="container">
+                <div class="row">
+                <div class="text-center">
+                    <button href="#" class="btn btn-lg btn-primary member-btn" data-toggle="modal" data-target="#half-mar-modal" data-backdrop="static" data-keyboard="false">Register Now</button>
+                </div>
+                </div> 
+                </div>
+            </div>
+        </section>
 
     
         </div>
@@ -637,7 +859,7 @@ and (max-width: 1920px){
         <div class="row">
   
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
-                    <a href="http://www.raymond.in/" target="_blank"><img src="img/raymond(150x150).png" alt="Image"></a>
+                    <a href="http://www.raymond.in/" target="_blank"><img src="img/Raymond-new.png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -645,7 +867,7 @@ and (max-width: 1920px){
             </div> -->
 
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
-                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/o2-healthstudio(150x150).png" alt="Image"></a>
+                    <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/O2-Health-Studio.png" alt="Image"></a>
                 </div>
 
             <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
@@ -658,7 +880,7 @@ and (max-width: 1920px){
     </div>
     <!--end of .container -->
 </section>
-<!-- /.client-logo --> 
+<!-- /.client-logo -->
 <script src="//cdn.jsdelivr.net/webshim/1.14.5/polyfiller.js">
 webshims.setOptions('forms-ext', {id: '#date'});
 webshims.polyfill('forms forms-ext');

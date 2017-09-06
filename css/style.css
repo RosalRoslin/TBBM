@@ -562,10 +562,13 @@ Shortcode Content
     border-right : 0;
     }
 
-@media (max-width : 768px) {
+@media (max-width : 1024px) {
     .navbar-toggle {
         display : block;
         }
+    .navbar-nav{
+        display: none;
+    }
     }
 
 .navbar-toggle {
