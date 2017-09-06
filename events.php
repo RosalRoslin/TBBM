@@ -666,6 +666,75 @@ webshims.polyfill('forms forms-ext');
 <?php
 include("html/footer.html")
 ?>
+
+<?php
+// Merchant key here as provided by Payu
+$MERCHANT_KEY = "jS3PnccY";
+
+// Merchant Salt as provided by Payu
+$SALT = "pmYnbucDQL";
+
+// End point - change to https://secure.payu.in for LIVE mode
+$PAYU_BASE_URL = "https://secure.payu.in";
+
+$action = '';
+
+$posted = array();
+if(!empty($_POST)) {
+    
+    //Set Values for Payumoney
+   $_POST['amount'] = $_POST['price_mar'];
+   $_POST['firstname'] = $_POST['fullname'][0];
+   foreach($_POST as $key => $value) {    
+    $posted[$key] = $value; 
+  }  
+}
+
+$formError = 0;
+
+if(empty($posted['txnid'])) {
+  // Generate random transaction id
+  $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+} else {
+  $txnid = $posted['txnid'];
+}
+$hash = '';
+// Hash Sequence
+$hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
+if(empty($posted['hash']) && sizeof($posted) > 0) {
+  if(empty($posted['hash'])) {
+    //$posted['productinfo'] = json_encode(json_decode('[{"name":"tutionfee","description":"","value":"500","isRequired":"false"},{"name":"developmentfee","description":"monthly tution fee","value":"1500","isRequired":"false"}]'));
+  $hashVarsSeq = explode('|', $hashSequence);
+    $hash_string = '';  
+  foreach($hashVarsSeq as $hash_var) {
+      $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
+      $hash_string .= '|';
+    }
+    $hash_string .= $SALT;
+    $hash = strtolower(hash('sha512', $hash_string));
+    $action = $PAYU_BASE_URL . '/_payment';
+    //echo 'var payuForm = document.forms.payuForm;';
+    //echo 'payuForm.submit();';
+  }
+} elseif(!empty($posted['hash'])) {
+  $hash = $posted['hash'];
+  $action = $PAYU_BASE_URL . '/_payment';
+}
+?>
+
+  <script>
+    var hash = '<?php echo $hash ?>';
+    //alert(hash);
+    function submitPayuForm() {
+      if(hash == '') {
+        return;
+      }
+      //alert(hash);
+      var payuForm = document.forms.payuForm;
+      payuForm.submit();
+    }
+  </script>
+<body onload="submitPayuForm()">
 <div class="container">
   <div class="modal fade" id="half-mar-modal" role="dialog">
   <div class="modal-dialog modal-lg">
@@ -679,8 +748,13 @@ include("html/footer.html")
               <div class="row">
                   <div class="col-xs-12">
                       <div class="well">
-                          <form id="loginForm" method="POST" action="/login/">
+                          <form id="payuForm" method="POST" action="<?php echo $action; ?>">
                             <div class="row">
+                                  <?php if($formError) { ?>
+                                    <span style="color:red">Please fill all mandatory fields.</span>
+                                    <br/>
+                                    <br/>
+                                  <?php } ?>
                                   <div class="col-xs-12 col-lg-12">
                                   <div class="col-xs-4 col-lg-4">
                                     <label>Select Seats:</label>
@@ -708,7 +782,16 @@ include("html/footer.html")
                                 </div>
                                 <div class="row">
                                 
-                              
+                                <input type="hidden" name="key" value="<?php echo $MERCHANT_KEY ?>" />
+                                <input type="hidden" name="hash" value="<?php echo $hash ?>"/>
+                                <input type="hidden" name="txnid" value="<?php echo $txnid ?>" />  
+                                <input type="hidden" name="productinfo" value="The Big Beah Marathon" /> 
+                                <input type="hidden" name="surl" value="../class/success.php" /> 
+                                <input type="hidden" name="furl" value="../class/success.php" /> 
+                                <input type="hidden" name="curl" value="../class/success.php" />  
+                                <input type="hidden" name="amount" value="0" />  
+                                <input type="hidden" name="firstname"/>  
+
                                 <div class="col-md-6 col-lg-6 col-xs-12">
                                   <div class="form-group float-label-control label-bottom">
                                   <label for="">Email Address</label>
@@ -719,7 +802,7 @@ include("html/footer.html")
                                 <div class="col-md-6 col-lg-6 col-xs-12">
                                   <div class="form-group float-label-control label-bottom">
                                   <label for="">Mobile Number</label>
-                                       <input type="number" class="form-control float-form" id="Mobile" name="Mobile" value="" required="true" title="Please enter your mobile number" placeholder="Please enter your mobile number">  
+                                       <input type="number" class="form-control float-form" id="phone" name="phone" value="" required="true" title="Please enter your mobile number" placeholder="Please enter your mobile number">  
                                   </div>
                                   </div>
                                 </div>
@@ -739,6 +822,7 @@ include("html/footer.html")
     </div>
   </div>
 </div>
+</body>
 
 <!-- <div class="container">
   <div class="modal fade" id="tenk-mar-modal" role="dialog">
@@ -802,14 +886,14 @@ var el =
 '<div class="row parent-row"><input class="parentRowAmt" value="0" type="hidden" /><div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
   '<div class="form-group float-label-control label-bottom">'+
     '<label for="">Fullname</label>'+
-    '<input type="text" class="form-control float-form" id="fullname" name="fullname" required="true" title="fullname" placeholder="Please enter you Fullname">'+
+    '<input type="text" class="form-control float-form" id="fullname[]" name="fullname[]" required="true" title="fullname" placeholder="Please enter you Fullname">'+
   '</div>'+
   '</div>'+
 
 '<div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
 '<div class="form-group float-label-control label-bottom">'+
     // '<label for="">Gender</label>'+  
-    ' <select class="form-control" id="tshirt" required="true">'+
+    ' <select class="form-control" id="tshirt[]" name="tshirt[]" required="true">'+
                                       '<option value="">Tshirt Size</option>'+
                                       '<option value="XS">XS</option>'+
                                       '<option value="S">S</option>'+
@@ -823,17 +907,18 @@ var el =
 '<div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
 '<div class="form-group float-label-control label-bottom">'+
     // '<label for="">Gender</label>'+  
-    ' <select class="form-control select-km" id="KM" required="true">'+
+    ' <select class="form-control select-km" id="KM[]" name="KM[]" required="true">'+
                                       '<option value="">Select KM</option>'+
                                       '<option value="10KM">10KM</option>'+
                                       '<option value="21.1KM">21.1KM</option>'+
                                   '</select>'+ 
+                                  '<input type="hidden" class="form-control float-form" id="rowAmt" name="rowAmt[]" title="rowAmt" placeholder="Please enter you Fullname">'+
 '</div>'+
 '</div>'+
 '<div class="col-xs-12 col-sm-3 col-lg-3 form-size mob-form-size">'+
 '<div class="form-group">'+
     // '<label for="">Gender</label>'+  
-    ' <select class="form-control" id="gender" required="true">'+
+    ' <select class="form-control" id="gender[]" name="gender[]" required="true">'+
                                       '<option value="">Select Gender</option>'+
                                       '<option>Male</option>'+
                                       '<option>Female</option>'+
@@ -861,43 +946,39 @@ $("#elcontainer").on('change', '.select-km', function(e){
       var amt = parseInt($('#price_mar').val());
       var finalAmt = (amt == "") ? 0 : amt;
       //console.log(val);
-      var parentRow = $(this).parent().parent().parent().parent();
+      var parentRow = $(this).parent().parent().parent();
       var parentAmtVal = parseInt(parentRow.find(".parentRowAmt").val());
 
       if(val != ""){
         if(val == "10KM"){
           var fixedAmt = 650;
-          // parentRow.find(".select-age option").hide();
-          // parentRow.find(".select-age option[value='Minimum age 10 yrs to 15 yrs']").show();
         }
         else if(val == "21.1KM"){
           var fixedAmt = 850;
-          // parentRow.find(".select-age option").hide();
-          // parentRow.find(".select-age option[value='Minimum age 15 yrs to 50 yrs']").show();
         }
-        else {
-          //parentRow.find(".select-age option").hide();
-        }
-
+        
         if(parentAmtVal == 0) {
           parentRow.find(".parentRowAmt").val(fixedAmt);
           finalAmt = finalAmt + fixedAmt;
-        }
-        else {
+        } else {
           finalAmt = finalAmt - parentAmtVal;
           finalAmt = finalAmt + fixedAmt;
-          parentRow.find(".parentRowAmt").val(fixedAmt);
+          parentRow.find(".parentRowAmt").val(finalAmt);
         }
+      } else {
+        finalAmt = finalAmt - parentAmtVal;
+        parentRow.find(".parentRowAmt").val(0);
       }
+      
       // else {
       //   parentRow.find(".select-age option").show();
       //   finalAmt = finalAmt - parentAmtVal;
       //   parentRow.find(".parentRowAmt").val(0);
       // }
-
+      $('#amount').val(finalAmt);
       $('#price_mar').val(finalAmt);
-      $('#priceSpan_mar').html(finalAmt);
       $('#priceSpan_mar_proceed').html(finalAmt);
+      $('#priceSpan_mar').html(finalAmt);
     });
 
 $('#numNames').on('change', function(e) {
