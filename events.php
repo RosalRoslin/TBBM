@@ -600,7 +600,6 @@ $SALT = "pmYnbucDQL";
 
 // End point - change to https://secure.payu.in for LIVE mode
 $PAYU_BASE_URL = "https://secure.payu.in";
-
 $action = '';
 $phone = '';
 $posted = array();
@@ -800,9 +799,9 @@ if(!empty($hash))
                                 <input type="hidden" name="txnid" value="<?php echo $txnid ?>" />  
                                 <input type="hidden" name="productinfo" value="The Big Beah Marathon" /> 
                                 <input type="hidden" name="service_provider" value="payu_paisa" /> 
-                                <input type="hidden" name="surl" value="../class/success.php" /> 
-                                <input type="hidden" name="furl" value="../class/success.php" /> 
-                                <input type="hidden" name="curl" value="../class/success.php" />  
+                                <input type="hidden" name="surl" value=http://thebigbeachmarathon.com/class/success.php" /> 
+                                <input type="hidden" name="furl" value="http://thebigbeachmarathon.com/class/success.php" /> 
+                                <input type="hidden" name="curl" value="http://thebigbeachmarathon.com/class/success.php" />  
                                 <input type="hidden" name="amount" value="<?php echo (empty($posted['amount'])) ? '0' : $posted['amount'] ?>" />  
                                 <input type="hidden" name="firstname" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>"/>  
 
