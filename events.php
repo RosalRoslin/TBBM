@@ -422,59 +422,6 @@ and (max-width: 1920px){
 }
 }*/
 </style>
-<!-- <video class="tatsu-bg-video" autoplay="autoplay" loop="loop" muted="muted" preload="auto" style="width:100%; height: 720px; left: 0px; top: -137.5px; display: block;object-fit:cover;"><source src="video/Marathon.mp4" type="video/mp4"></video> -->
-<!-- <div id="x-corp-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
-
-    <ol class="carousel-indicators">
-        <li data-target="#x-corp-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#x-corp-carousel" data-slide-to="1"></li>
-        <li data-target="#x-corp-carousel" data-slide-to="2"></li>
-    </ol>
-
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="img/hero-slide-1.jpg" alt="Hero Slide">
-
-            <div class="carousel-caption">
-                <h1>It′s simple, smart and occasionally magical.</h1>
-
-                <p>Intrinsicly negotiate corporate synergy rather than user-centric web services. Synergistically
-                    transition emerging schemas and.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="img/hero-slide-2.jpg" alt="...">
-
-            <div class="carousel-caption">
-                <h1>It′s profitable and successful!</h1>
-
-                <p>Synergistically enhance low-risk high-yield testing procedures with clicks-and-mortar architectures.
-                    Compellingly revolutionize future-proof interfaces and.</p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="img/hero-slide-3.jpg" alt="...">
-
-            <div class="carousel-caption">
-                <h1>Good solutions for your business!</h1>
-
-                <p>Monotonectally envisioneer 24/7 bandwidth with reliable imperatives. Continually unleash unique
-                    niches after go forward.</p>
-            </div>
-        </div>
-    </div>
-
-    <a class="left carousel-control" href="#x-corp-carousel" role="button" data-slide="prev">
-        <i class="fa fa-angle-left" aria-hidden="true"></i>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#x-corp-carousel" role="button" data-slide="next">
-        <i class="fa fa-angle-right" aria-hidden="true"></i>
-        <span class="sr-only">Next</span>
-    </a>
-</div> -->
-<!-- #x-corp-carousel-->
-
 <section class="single-page-title">
     <div class="container text-center">
         <h2 class="title">Events</h2>
@@ -515,34 +462,6 @@ and (max-width: 1920px){
                 </div>
             </div>
         </div>
-        <!-- row -->
-       <!--  <div class="row">
-            <div class="col-md-6">
-                <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="img/img-offer-3.jpg" alt="Image"></a>
-
-                    <div class="caption">
-                        <h3><a href="#">Analysis</a></h3>
-
-                        <p>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
-                            tellus odio malesuada ex.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="img/img-offer-4.jpg" alt="Image"></a>
-
-                    <div class="caption">
-                        <h3><a href="#">Banking</a></h3>
-
-                        <p>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
-                            tellus odio malesuada ex.</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- .row -->
     </div>
     <!-- .container -->
 </section>
@@ -557,50 +476,6 @@ and (max-width: 1920px){
     </section>
     <div class="container">
         <div class="row">
-            <!-- <div class="col-md-6 img-left">
-                <img class="img-responsive" src="img/img-about.png" alt="">
-            </div>
-            <div class="col-md-6">
-                <div class="promo-block-wrapper clearfix">
-                    <div class="promo-icon">
-                        <i class="fa fa-line-chart"></i>
-                    </div>
-                    <div class="promo-content">
-                        <h3>We teach you how to improve your business</h3>
-
-                        <p>Lorem ipsum dolor sit consectetuer adipiscing elit nonummy ib uismod tincidunt ut laoreet
-                            dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div> -->
-                <!-- /.promo-block-wrapper -->
-
-               <!--  <div class="promo-block-wrapper clearfix">
-                    <div class="promo-icon">
-                        <i class="fa fa-life-ring"></i>
-                    </div>
-                    <div class="promo-content">
-                        <h3>We make the technology affordable for you</h3>
-
-                        <p>Lorem ipsum dolor sit consectetuer adipiscing elit nonummy ib uismod tincidunt ut laoreet
-                            dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div> -->
-                <!-- /.promo-block-wrapper -->
-
-                <!-- <div class="promo-block-wrapper clearfix">
-                    <div class="promo-icon">
-                        <i class="fa fa-calculator"></i>
-                    </div>
-                    <div class="promo-content last-type">
-                        <h3>Seamlessly grow wireless human capital before turnkey.</h3>
-
-                        <p>Lorem ipsum dolor sit consectetuer adipiscing elit nonummy ib uismod tincidunt ut laoreet
-                            dolore magna aliquam erat volutpat.</p>
-                    </div>
-                </div> -->
-                <!-- /.promo-block-wrapper -->
-
-            <!-- </div> -->
  <section id="bs-pricing-six" class="bs-pricing-four roomy-50 bg-white fix">
             <div class="container">
                 <div class="row">
@@ -687,167 +562,6 @@ and (max-width: 1920px){
         </div>
     </div>
 </section>
-
-
-
-
-<!-- <section class="team ptb-100">
-    <section class="section-title">
-        <div class="container text-center">
-            <h2>Our Team</h2>
-            <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
-        </div>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <figure class="thumbnail">
-                    <a href="#"><img src="img/img-team-1.jpg" class="img-responsive" alt="Image"></a>
-                    <figcaption class="caption text-center">
-                        <h3>Reena Scot -
-                            <small>Director</small>
-                        </h3>
-                    </figcaption>
-                </figure>
-            </div> -->
-            <!-- /.col-sm-4 -->
-
-           <!--  <div class="col-sm-4">
-                <figure class="thumbnail">
-                    <a href="#"><img src="img/img-team-2.jpg" class="img-responsive" alt="Image"></a>
-                    <figcaption class="caption text-center">
-                        <h3>David Martin -
-                            <small>Founder</small>
-                        </h3>
-                    </figcaption>
-                </figure>
-            </div> -->
-            <!-- /.col-sm-4 -->
-
-           <!--  <div class="col-sm-4">
-                <figure class="thumbnail">
-                    <a href="#"><img src="img/img-team-3.jpg" class="img-responsive" alt="Image"></a>
-                    <figcaption class="caption text-center">
-                        <h3>Jenefir White -
-                            <small>marketing</small>
-                        </h3>
-                    </figcaption>
-                </figure>
-            </div> -->
-            <!-- /.col-sm-4 -->
-
-        <!-- </div> -->
-        <!-- /.row -->
-       <!--  <div class="row">
-            <div class="col-sm-4">
-                <figure class="thumbnail">
-                    <a href="#"><img src="img/img-team-4.jpg" class="img-responsive" alt="Image"></a>
-                    <figcaption class="caption text-center">
-                        <h3>Reena Scot -
-                            <small>Director</small>
-                        </h3>
-                    </figcaption>
-                </figure>
-            </div> -->
-            <!-- /.col-sm-4 -->
-
-            <!-- <div class="col-sm-4">
-                <figure class="thumbnail">
-                    <a href="#"><img src="img/img-team-5.jpg" class="img-responsive" alt="Image"></a>
-                    <figcaption class="caption text-center">
-                        <h3>David Martin -
-                            <small>Founder</small>
-                        </h3>
-                    </figcaption>
-                </figure>
-            </div> -->
-            <!-- /.col-sm-4 -->
-
-           <!--  <div class="col-sm-4">
-                <figure class="thumbnail">
-                    <a href="#"><img src="img/img-team-6.jpg" class="img-responsive" alt="Image"></a>
-                    <figcaption class="caption text-center">
-                        <h3>Jenefir White -
-                            <small>marketing</small>
-                        </h3>
-                    </figcaption>
-                </figure>
-            </div> -->
-            <!-- /.col-sm-4 -->
-
-<!--         </div> -->
-        <!-- /.row -->
-<!--     </div> -->
-    <!-- /.container -->
-<!-- </section> -->
-<!-- .team -->
-
-<!-- <section class="testimonial">
-    <section class="section-title">
-        <div class="container text-center">
-            <h2>Satisfied Customer</h2>
-            <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
-        </div>
-    </section>
-    <div class="container">
-        <div id="testimonialSlider" class="carousel slide" data-ride="carousel">
- -->
-            <!-- Wrapper for slides -->
-            <!-- <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <blockquote>
-                        <ul>
-                            <li><img src="img/img-testimonial-1.jpg" class="img-responsive" alt=""/></li>
-                            <li class="name">Justus Kühn</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel </br>lacus
-                            pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec</br> diam elit
-                            consequat eget augue vitae aliquet sollicitudin.
-                        </p>
-
-                    </blockquote>
-                </div>
-                <div class="item">
-                    <blockquote>
-                        <ul>
-                            <li><img src="img/img-testimonial-2.jpg" class=" img-responsive" alt=""/></li>
-                            <li class="name">Lennox Arnold</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel </br>lacus
-                            pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec</br> diam elit
-                            consequat eget augue vitae aliquet sollicitudin.
-                        </p>
-
-                    </blockquote>
-                </div>
-                <div class="item">
-                    <blockquote>
-                        <ul>
-                            <li><img src="img/img-testimonial-3.jpg" class="img-responsive" alt=""/></li>
-                            <li class="name">Paulina Berger</li>
-                        </ul>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel </br>lacus
-                            pretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec</br> diam elit
-                            consequat eget augue vitae aliquet sollicitudin.
-                        </p>
-                    </blockquote>
-                </div>
-            </div>
-            <!-- Controls -->
-           <!--  <a class="left carousel-control" href="#testimonialSlider" role="button" data-slide="prev">
-                <span><i class="fa fa-angle-left"></i></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#testimonialSlider" role="button" data-slide="next">
-                <span><i class="fa fa-angle-right"></i></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div> -->
-        <!-- #testimonialSlider -->
-<!--     </div>
-</section> -->
-<!-- .testimonial -->
 <section class="client-logo ptb-100">
     <section class="section-title">
         <div class="container text-center">
@@ -861,21 +575,9 @@ and (max-width: 1920px){
                 <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-4 clearfix section-margin">
                     <a href="http://www.raymond.in/" target="_blank"><img src="img/Raymond-new.png" alt="Image"></a>
                 </div>
-
-            <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/bovonto-new.png" alt="Image"></a>
-            </div> -->
-
                 <div class="col-md-2 col-sm-4 col-xs-6 clearfix o2 section-margin">
                     <a href="http://www.o2healthstudio.com/" target="_blank"><img src="img/O2-Health-Studio.png" alt="Image"></a>
                 </div>
-
-            <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/poorvika.png" alt="Image"></a>
-            </div> -->
-            <!-- <div class="col-md-2 col-sm-4 col-xs-6 section-margin">
-                <a href="#"><img src="img/riceday.png" alt="Image"></a>
-            </div> -->
         </div>
     </div>
     <!--end of .container -->
@@ -900,16 +602,37 @@ $SALT = "pmYnbucDQL";
 $PAYU_BASE_URL = "https://secure.payu.in";
 
 $action = '';
-
+$phone = '';
 $posted = array();
 if(!empty($_POST)) {
     
-    //Set Values for Payumoney
-   $_POST['amount'] = $_POST['price_mar'];
-   $_POST['firstname'] = $_POST['fullname'][0];
-   foreach($_POST as $key => $value) {    
+  //Set Values for Payumoney
+  $_POST['amount'] = $_POST['price_mar'];
+  $_POST['firstname'] = $_POST['fullname'][0];
+   
+  foreach($_POST as $key => $value) {  
+    if($key == 'fullname') //|| $key != 'tshirt' || $key != 'KM' || $key != 'rowAmt' || $key != 'gender' || $key != 'price_mar') 
+    {
+      continue;    
+    } elseif ( $key == 'tshirt') {
+      continue;
+    } elseif ($key == 'KM') {
+      # code...
+      continue;
+    } elseif ($key == 'rowAmt') {
+      # code...
+      continue;
+    } elseif ($key == 'gender') {
+      # code...
+      continue;
+    } elseif ($key == 'price_mar') {
+      # code...
+      continue;
+    }
     $posted[$key] = $value; 
-  }  
+  } 
+  $phone = $posted['phone'];
+  //print_r($posted); exit(0);
 }
 
 $formError = 0;
@@ -920,14 +643,28 @@ if(empty($posted['txnid'])) {
 } else {
   $txnid = $posted['txnid'];
 }
-$hash = '';
+$hash = ''; 
+$hash_string = ''; 
 // Hash Sequence
 $hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
 if(empty($posted['hash']) && sizeof($posted) > 0) {
-  if(empty($posted['hash'])) {
+  if(
+          empty($posted['key'])
+          || empty($posted['txnid'])
+          || empty($posted['amount'])
+          || empty($posted['firstname'])
+          || empty($posted['email'])
+          || empty($posted['phone'])
+          || empty($posted['productinfo'])
+          || empty($posted['surl'])
+          || empty($posted['furl'])
+      || empty($posted['service_provider'])
+  ) {
+    $formError = 1;
+  } else {
     //$posted['productinfo'] = json_encode(json_decode('[{"name":"tutionfee","description":"","value":"500","isRequired":"false"},{"name":"developmentfee","description":"monthly tution fee","value":"1500","isRequired":"false"}]'));
   $hashVarsSeq = explode('|', $hashSequence);
-    $hash_string = '';  
+   
   foreach($hashVarsSeq as $hash_var) {
       $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
       $hash_string .= '|';
@@ -935,6 +672,7 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
     $hash_string .= $SALT;
     $hash = strtolower(hash('sha512', $hash_string));
     $action = $PAYU_BASE_URL . '/_payment';
+    $_POST['hash'] = $hash;
     //echo 'var payuForm = document.forms.payuForm;';
     //echo 'payuForm.submit();';
   }
@@ -942,6 +680,59 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
   $hash = $posted['hash'];
   $action = $PAYU_BASE_URL . '/_payment';
 }
+
+
+
+if(!empty($hash))
+{
+  require_once 'class/dbconnect.php';
+
+  //Transaction DB process
+  $firstname = strip_tags($_POST['firstname']);
+  $email = strip_tags($_POST['email']);
+  $txnid = strip_tags($_POST['txnid']);
+  $amount = strip_tags($_POST['amount']);
+  $productinfo = strip_tags($_POST['productinfo']); 
+  $hash = strip_tags($hash);
+  $phone = strip_tags($_POST['phone']);
+  
+  $firstname = $DBcon->real_escape_string($firstname);
+  $email = $DBcon->real_escape_string($email);
+  $txnid = $DBcon->real_escape_string($txnid);
+  $amount = $DBcon->real_escape_string($amount);
+  $productinfo = $DBcon->real_escape_string($productinfo);
+  $hash = $DBcon->real_escape_string($hash);
+  $phone = $DBcon->real_escape_string($phone);
+  $query = "INSERT INTO transactions(firstname, email, txnid, amount, productinfo, hash, phone) VALUES('$firstname','$email','$txnid','$amount','$productinfo','$hash','$phone')";
+  if($DBcon->query($query)) {
+
+    $trans_id = $DBcon->insert_id;
+    //Tickets booking Process
+    foreach ($_POST['fullname'] as $key => $value) {
+      # code...
+      $tickets = strip_tags($_POST['tickets']);
+      $fullname = strip_tags($value);
+      $tshirt = strip_tags($_POST['tshirt'][$key]);
+      $KM = strip_tags($_POST['KM'][$key]);
+      $gender = strip_tags($_POST['gender'][$key]);
+      $email = strip_tags($_POST['email']);
+      $phone = strip_tags($_POST['phone']);
+      
+      $tickets = $DBcon->real_escape_string($tickets);
+      $fullname = $DBcon->real_escape_string($fullname);
+      $tshirt = $DBcon->real_escape_string($tshirt);
+      $KM = $DBcon->real_escape_string($KM);
+      $gender = $DBcon->real_escape_string($gender);
+      $email = $DBcon->real_escape_string($email);
+      $phone = $DBcon->real_escape_string($phone);    
+      
+      $query = "";
+      $query = "INSERT INTO tickets(tickets, fullname,tshirt,KM,gender,email,phone, transactions_id) VALUES('$tickets','$fullname','$tshirt','$KM','$gender','$email','$phone','$trans_id')";
+      $DBcon->query($query);
+    }
+  }
+}
+
 ?>
 
   <script>
@@ -951,7 +742,6 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
       if(hash == '') {
         return;
       }
-      //alert(hash);
       var payuForm = document.forms.payuForm;
       payuForm.submit();
     }
@@ -1006,25 +796,27 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
                                 
                                 <input type="hidden" name="key" value="<?php echo $MERCHANT_KEY ?>" />
                                 <input type="hidden" name="hash" value="<?php echo $hash ?>"/>
+                                <input type="hidden" name="abc" value="<?php echo $hash_string ?>"/>
                                 <input type="hidden" name="txnid" value="<?php echo $txnid ?>" />  
                                 <input type="hidden" name="productinfo" value="The Big Beah Marathon" /> 
+                                <input type="hidden" name="service_provider" value="payu_paisa" /> 
                                 <input type="hidden" name="surl" value="../class/success.php" /> 
                                 <input type="hidden" name="furl" value="../class/success.php" /> 
                                 <input type="hidden" name="curl" value="../class/success.php" />  
-                                <input type="hidden" name="amount" value="0" />  
-                                <input type="hidden" name="firstname"/>  
+                                <input type="hidden" name="amount" value="<?php echo (empty($posted['amount'])) ? '0' : $posted['amount'] ?>" />  
+                                <input type="hidden" name="firstname" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>"/>  
 
                                 <div class="col-md-6 col-lg-6 col-xs-12">
                                   <div class="form-group float-label-control label-bottom">
                                   <label for="">Email Address</label>
-                                     <input type="email" class="form-control float-form" id="email" name="email" required="true" title="Please enter your email" placeholder="Please enter you Email address">
+                                     <input type="email" class="form-control float-form" id="email" name="email" required="true" title="Please enter your email" value="<?php echo (empty($posted['email'])) ? '' : $posted['email']; ?>" placeholder="Please enter you Email address">
                                   </div>
                                 </div>
 
                                 <div class="col-md-6 col-lg-6 col-xs-12">
                                   <div class="form-group float-label-control label-bottom">
                                   <label for="">Mobile Number</label>
-                                       <input type="number" class="form-control float-form" id="phone" name="phone" value="" required="true" title="Please enter your mobile number" placeholder="Please enter your mobile number">  
+                                       <input type="number" class="form-control float-form" id="phone" name="phone" required="true" title="Please enter your mobile number" value="<?php echo (empty($posted['phone'])) ? '' : $posted['phone']; ?>" placeholder="Please enter your mobile number">  
                                   </div>
                                   </div>
                                 </div>
