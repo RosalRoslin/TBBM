@@ -193,11 +193,11 @@ Author URI: http://bootstrapthemes.co
 .bs-pricing-four .btn,
 .bs-pricing-four .navbar > li > a.btn {
     border: none;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     position: relative;
-    padding: 12px 30px;
+    padding: 15px 40px;
     margin: 10px 1px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -206,7 +206,7 @@ Author URI: http://bootstrapthemes.co
 }
 
 .bs-pricing-four .btn {
-    border-radius: 30px;
+   /* border-radius: 30px;*/
 }
 
 
@@ -441,7 +441,7 @@ and (max-width: 1920px){
         <div class="row">
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/display/1619chennaismile-display.png" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/display/1619chennaismile-display.png" alt="Image" style="width: 50%;"></a>
 
                     <div class="caption">
                         <h3><a href="#">Half Marathon</a></h3>
@@ -452,7 +452,7 @@ and (max-width: 1920px){
             </div>
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
-                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/display/1619chennaismile-display.png" alt="Image"></a>
+                    <a href="#"><img class="img-responsive" src="http://chennaismile.com/img/display/1619chennaismile-display.png" alt="Image" style="width: 50%;"></a>
 
                     <div class="caption">
                         <h3><a href="#">10K Run</a></h3>
@@ -496,8 +496,8 @@ and (max-width: 1920px){
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-md-offset-3">
-                    <div class="col-md-4">
+                    <div class="col-md-offset-3 col-lg-offset-1" style="position: relative;left: 40px;">
+                    <div class="col-md-4 col-lg-5">
                         <div class="bs bs-pricing">
                             <div class="cotent">
                                 <h3 class="category">Half Marathon</h3>
@@ -513,7 +513,7 @@ and (max-width: 1920px){
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-lg-5">
                         <div class="bs bs-pricing">
                             <div class="cotent">
                                 <h3 class="category">10K Run</h3>

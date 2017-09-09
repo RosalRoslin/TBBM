@@ -390,7 +390,7 @@ Shortcode Content
     color            : #ffffff;
     background-color : transparent;
     /*border           : 2px solid #ffffff;*/
-    border-bottom: 2px solid #ffffff;
+    /*border-bottom: 2px solid #ffffff;*/
     }
 
 .navbar-default .navbar-nav > .active > a,

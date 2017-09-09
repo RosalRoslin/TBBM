@@ -43,7 +43,7 @@ color: #313131 !important;
             <h3>join - Sign up/login to avail exciting offers<br> on your running merchandise</h3>-->
         </div>
     </section>
-    <center><h2>Sign Up/ Login To Avail Exciting Offers On Our Running Merchandise And Marathons.</h2></center>
+    <!-- <center><h2>Sign Up/ Login To Avail Exciting Offers On Our Running Merchandise And Marathons.</h2></center> -->
 <section class="contact-form ptb-100" style="padding-top: 25px;">
     <div class="container text-center">
         <div class="row">
@@ -116,7 +116,7 @@ color: #313131 !important;
                               </div>
                               <div id="loginErrorMsg" class="alert alert-error hide">Wrong username or password</div>
                               <button type="submit" name="btn-login" id="btn-login" class="btn btn-success btn-block">Login</button>
-                              <a href="forgot.php" style="float: right;margin-top: 10px;">Forgot Password?</a>
+                              <a href="forgotpass.php" style="float: right;margin-top: 10px;">Forgot Password?</a>
                           </form>
                       </div>
                   </div>

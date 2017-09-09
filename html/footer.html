@@ -92,12 +92,39 @@
                 <li><a href="chapters.php">Chapters/Groups</a></li>
                 <li><a href="sponsors.php">Sponsors</a></li>
                 <li><a href="events.php">Events</a></li>
-                <li><a href="join.php" class="dropdown-toggle">Join</a></li>
+ <?php 
+                //session_start();
+                if (!isset($_SESSION['userSession'])) {
+                ?>
+                <li class="dropdown m-menu-fw"><a href="join.php" class="dropdown-toggle">Login/Signup
+               <!--  <span><i class="fa fa-angle-down"></i></span> --></a><?php }?> 
+              <?php 
+                //session_start();
+                if (isset($_SESSION['userSession'])) {
+                ?>
+                <li class="dropdown m-menu-fw"><a href="profile.php" class="dropdown-toggle">My Profile
+               <!--  <span><i class="fa fa-angle-down"></i></span> --></a>
+               <!--  <ul class="dropdown-menu">
+                        <li>
+                            <div class="m-menu-content">
+                                <ul class="col-sm-12">
+                -->                     <!-- <li class=""><a href="profile.php">My Profile</a></li> -->
+                                   <!--  <li><a href="member.php">Become a Member</a></li>
+                                    <li><a href="merchandise.php">Merchandise</a></li>
+                                    <li><a href="offers.php">Brands & Offers</a></li> -->
+                                    <li><a href="class/logout.php?logout">Logout</a>
+                               <!--  </ul>
+                            </div>
+                        </li>
+                </ul> -->
+                <?php } ?>
+                </li> </li>                 
+               <!--  <li><a href="join.php" class="dropdown-toggle">Join</a></li>
                 <li class=""><a href="my-profile.php">My Profile</a></li>
                 <li><a href="member.php">Become a Member</a></li>
                 <li><a href="merchandise.php">Merchandise</a></li>
                 <li><a href="offers.php">Brands & Offers</a></li>
-            
+             --></li>
             </ul>
         </div>
     </div>
