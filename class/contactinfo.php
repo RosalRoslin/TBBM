@@ -44,12 +44,15 @@ if(isset($_POST)) {
 		if ($DBcon->query($query)) { 
 
 		  	require_once'../gmail.php';
-			echo("Comment Send Successfully!!!!!!!!!");
+		  	$_SESSION['contact_success'] = "Ur Comment Send Succesfully!";
+
+			//echo("Comment Send Successfully!!!!!!!!!");
 		  	header("location: ../index.php");
 
 		 } else {
 
-		 
+		  $_SESSION['contact_error'] = "Sry Ur Comment Not Send!..";
+
 		  	header("location: ../index.php");
 
 		 }	 

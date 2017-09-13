@@ -48,9 +48,11 @@ if(isset($_POST)) {
 
  	if ($count==0) {
 
-		$query = "INSERT INTO users(firstname, lastname,email,password,role) VALUES('$firstname','$lastname','$email','$hashed_password','User')";
+		$query = "INSERT INTO users(firstname, lastname,email,password,role,active_code) VALUES('$firstname','$lastname','$email','$hashed_password','User','')";
 
 		if ($DBcon->query($query)) { 
+			$_SESSION['sign_success'] = "Registration Succesfully!";
+
 
 			unset($_SESSION['sign_error']);
 
@@ -60,7 +62,7 @@ if(isset($_POST)) {
 
 		 } else {
 
-		 	$_SESSION['sign_error'] = "Registration failed. Try again..";
+		 		$_SESSION['sign_error'] = "Registration failed. Try again..";
 
 		  	header("location: ../index.php");
 
@@ -70,8 +72,8 @@ if(isset($_POST)) {
 
 	} else {
 
-		 $_SESSION['sign_error'] = "Email already exists..";
-		 header("location: ../join.php");
+		 $_SESSION['signup_error'] = "Email already exists..";
+		  header("location: ../join.php");
 
 	}
 

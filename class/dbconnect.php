@@ -3,7 +3,7 @@
 	 $DBhost = "localhost";
 	 $DBuser = "root";
 	 $DBpass = "";
-	 $DBname = "thebigbeachmarathon";
+	 $DBname = "thebigbeachmarathan";
 	 
 	 $DBcon = new MySQLi($DBhost,$DBuser,$DBpass,$DBname);
     

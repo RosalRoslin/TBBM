@@ -704,6 +704,7 @@ if(!empty($hash))
   $phone = $DBcon->real_escape_string($phone);
   $query = "INSERT INTO transactions(firstname, email, txnid, amount, productinfo, hash, phone) VALUES('$firstname','$email','$txnid','$amount','$productinfo','$hash','$phone')";
   if($DBcon->query($query)) {
+$_SESSION['transaction_success'] = "Ur Transaction Has Done Succesfully!!";
 
     $trans_id = $DBcon->insert_id;
     //Tickets booking Process
@@ -727,9 +728,18 @@ if(!empty($hash))
       
       $query = "";
       $query = "INSERT INTO tickets(tickets, fullname,tshirt,KM,gender,email,phone, transactions_id) VALUES('$tickets','$fullname','$tshirt','$KM','$gender','$email','$phone','$trans_id')";
-      $DBcon->query($query);
+       if($DBcon->query($query)) {
+        $_SESSION['ticket_success'] = "Ur Tickets has Booked!!";
+
+      }else {
+    $_SESSION['ticket_error'] = "Sry Ur Comment Not Send";
+      }
+
     }
   }
+  else {
+    $_SESSION['transaction_error'] = "Last Transaction Has Cancelled";
+      }
 }
 
 ?>

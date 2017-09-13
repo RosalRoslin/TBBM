@@ -153,13 +153,72 @@
     toastr.options = {
   "positionClass": "toast-bottom-center"
     }
+   
+    <?php if (isset($_SESSION['forgot_info'])) { ?>
+   toastr.info('Plzz Check Ur E-Mail',{timeOut: 5000});
+    <?php unset($_SESSION['forgot_info']); } ?>
+
+<?php if (isset($_SESSION['forgot_error'])) { ?>
+    toastr.error('plz check ur inputs!!!', 'This E-Mail is not Existing!..',{timeOut: 5000});
+    <?php unset($_SESSION['forgot_error']); } ?>
+
+
+<?php if (isset($_SESSION['ticket_success'])) { ?>
+    toastr.success('Ur Tickets has Booked!', 'Thanks for Ur Booking!!!', 'Big Beach Marathon Says',{timeOut: 5000});
+    <?php unset($_SESSION['ticket_success']); } ?>
+
+     <?php if (isset($_SESSION['ticket_error'])) { ?>
+    toastr.error('Sry Ur Comment Not Send', 'Try Again!..',{timeOut: 5000});
+    <?php unset($_SESSION['ticket_error']); } ?>
+
+<?php if (isset($_SESSION['transaction_success'])) { ?>
+    toastr.success('Ur Transaction Has Done Succesfully!', 'Thanks For Ur Intrest!!!', 'Big Beach Marathon Says',{timeOut: 5000});
+   // toastr.error('Signup Error', 'Register Error',{timeOut: 5000});
+    <?php unset($_SESSION['transaction_success']); } ?>
+
+     <?php if (isset($_SESSION['transaction_error'])) { ?>
+    toastr.error('Last Transaction Has Cancelled', 'Try Again!..',{timeOut: 5000});
+    <?php unset($_SESSION['transaction_error']); } ?>
+
+<?php if (isset($_SESSION['contact_success'])) { ?>
+    toastr.success('Ur Comment Send Succesfully!', 'Thanks for Ur Valuable Comment!!!', 'Big Beach Marathon Says',{timeOut: 5000});
+   // toastr.error('Signup Error', 'Register Error',{timeOut: 5000});
+    <?php unset($_SESSION['contact_success']); } ?>
+
+     <?php if (isset($_SESSION['contact_error'])) { ?>
+    toastr.error('Sry Ur Comment Not Send', 'Try Again!..',{timeOut: 5000});
+    <?php unset($_SESSION['contact_error']); } ?>
+
+
     <?php if (isset($_SESSION['login_error'])) { ?>
     toastr.error('Email Or Password Entered Is Incorrect!', 'Login Error',{timeOut: 5000});
     <?php unset($_SESSION['login_error']); } ?>
 
+<?php if (isset($_SESSION['login_success'])) { ?>
+    toastr.success('Login Succesfully!', 'Big Beach Marathon Says',{timeOut: 5000});
+   // toastr.error('Signup Error', 'Register Error',{timeOut: 5000});
+    <?php unset($_SESSION['login_success']); } ?>
+
+<?php if (isset($_SESSION['sign_success'])) { ?>
+    toastr.success('Registration Succesfully!', 'Big Beach Marathon Says',{timeOut: 5000});
+   // toastr.error('Signup Error', 'Register Error',{timeOut: 5000});
+    <?php unset($_SESSION['sign_success']); } ?>
+
      <?php if (isset($_SESSION['sign_error'])) { ?>
     toastr.error('Signup Error', 'Register Error',{timeOut: 5000});
     <?php unset($_SESSION['sign_error']); } ?>
+
+<?php if (isset($_SESSION['signup_error'])) { ?>
+toastr.warning('Signup Error. This E-Mail ID is Already In Use, Try Again!')
+ <?php unset($_SESSION['signup_error']); } ?>
+
+<?php if (isset($_SESSION['password_success'])) { ?>
+    toastr.success('Password is reset successfully!', 'Big Beach Marathon Says',{timeOut: 5000});
+    <?php unset($_SESSION['password_success']); } ?>
+
+<?php if (isset($_SESSION['password_error'])) { ?>
+    toastr.error('Password Not Updated', 'Password Error',{timeOut: 5000});
+    <?php unset($_SESSION['password_error']); } ?>
 
   });
   
