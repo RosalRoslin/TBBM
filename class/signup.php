@@ -8,7 +8,7 @@ if (isset($_SESSION['firstname'])!="") {
 
 }
 
-require_once 'dbconnect.php';
+require 'dbconnect.php';
 
 if(isset($_POST)) {
 
@@ -72,8 +72,16 @@ if(isset($_POST)) {
 
 	} else {
 
+<<<<<<< .mine
+		 $_SESSION['signup_error'] = "Email already exists..";
+		 header("location: ../join.php");
+||||||| .r25
+		 $_SESSION['sign_error'] = "Email already exists..";
+		 header("location: ../join.php");
+=======
 		 $_SESSION['signup_error'] = "Email already exists..";
 		  header("location: ../join.php");
+>>>>>>> .r30
 
 	}
 
