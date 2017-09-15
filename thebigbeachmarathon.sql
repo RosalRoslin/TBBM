@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Sep 08, 2017 at 01:44 AM
+-- Generation Time: Sep 15, 2017 at 01:27 AM
 -- Server version: 5.6.36-cll-lve
 -- PHP Version: 5.6.30
 
@@ -32,16 +32,8 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `email` varchar(300) NOT NULL,
   `website` varchar(100) NOT NULL,
   `message` varchar(400) NOT NULL,
-  `msgtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`contactid`)
+  `msgtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `contact`
---
-
-INSERT INTO `contact` (`contactid`, `firstname`, `email`, `website`, `message`, `msgtime`) VALUES
-(0, 'Mickey', 'vidhimangal.v@gmail.com', '987654321', 'Hiiiiiiii', '2017-09-08 05:51:36');
 
 -- --------------------------------------------------------
 
@@ -63,7 +55,14 @@ CREATE TABLE IF NOT EXISTS `tickets` (
   `Status` varchar(255) DEFAULT NULL,
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `tickets`
+--
+
+INSERT INTO `tickets` (`ID`, `transactions_id`, `txnid`, `tickets`, `fullname`, `tshirt`, `KM`, `gender`, `email`, `phone`, `Status`, `created`) VALUES
+(3, 2, '3bd6685042c2f6867d1e', '1', 'Pradeep', 'XXL', '10KM', 'Male', 'pradeep.j@orbiten.in', '9677859889', 'failure', '2017-09-15 07:06:39');
 
 -- --------------------------------------------------------
 
@@ -87,7 +86,14 @@ CREATE TABLE IF NOT EXISTS `transactions` (
   `phone` varchar(255) DEFAULT NULL,
   `created` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `transactions`
+--
+
+INSERT INTO `transactions` (`ID`, `users_id`, `firstname`, `email`, `txnid`, `amount`, `productinfo`, `hash`, `status`, `unmappedstatus`, `field9`, `bank_ref_num`, `phone`, `created`) VALUES
+(2, NULL, 'Pradeep', 'pradeep.j@orbiten.in', '3bd6685042c2f6867d1e', '650', 'The Big Beah Marathon', 'ccae0b54d3d2d5a25eb75b4581c04c7c402e8dd43f3240ad13dd21cea5c02b2fe6ec19df5d1ff6a7ce3fa4dfb1f3cc199c52c173fc0565fe271fbb713af22f4f', 'failure', 'userCancelled', 'Cancelled by user', '163252506', '9677859889', '2017-09-15 00:06:39');
 
 -- --------------------------------------------------------
 
@@ -101,6 +107,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `LastName` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
+  `role` varchar(50) NOT NULL,
+  `active_code` varchar(200) NOT NULL,
   `DOB` date DEFAULT NULL,
   `Gender` varchar(255) DEFAULT NULL,
   `ContactNumber` varchar(255) DEFAULT NULL,
@@ -111,17 +119,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `profiile` varchar(255) DEFAULT NULL,
   `created` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `FirstName`, `LastName`, `email`, `password`, `DOB`, `Gender`, `ContactNumber`, `Height`, `Weight`, `Membership`, `userid`, `profiile`, `created`) VALUES
-(7, 'Pradeep', 'Jeyachandran', 'pradeep@orbiten.in', '$2y$10$Meu2U..8kXhnjnfraXjPDuo4f4GheGBvonmwNhfosbUaZh8OSX2Gu', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-08-18 10:35:13'),
-(8, 'vasanthaprakash', 'chandrasekaran', 'vasanth1407@gmail.com', '$2y$10$QByBHvuLg6VzQFex6ASCg.xZit5lC9pbDRm6BUNh5.44MS0sFZ/vy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-08-21 23:26:58'),
-(9, 'lakshmi narasimhan', 'N', 'nl.adarsh@gmail.com', '$2y$10$8wBslw9ie8ssnqlPYzVzDOSoqIEr5fV0oRmKSKmnv5WDLzYG9CoYC', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-09-01 08:43:25'),
-(10, 'Roslin', 'a', 'roslin.albert@gmail.com', '$2y$10$F8U5LXoBFyfP0vQg2sJAr.gZvgSgKM6FssGTLhonL0qYjKQZBqGi6', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-09-06 04:13:21');
+INSERT INTO `users` (`ID`, `FirstName`, `LastName`, `email`, `password`, `role`, `active_code`, `DOB`, `Gender`, `ContactNumber`, `Height`, `Weight`, `Membership`, `userid`, `profiile`, `created`) VALUES
+(1, 'Pradeep', 'Jeyachandran', 'pradeep.j@orbiten.in', '$2y$10$Z9iNQKoXi21giNpgtMQiD.oV6ZXWQ4pcPA4j5F94lIFfAdl57XWFy', 'User', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-09-15 00:26:39');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
